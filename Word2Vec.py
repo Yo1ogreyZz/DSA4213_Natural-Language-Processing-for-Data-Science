@@ -1,55 +1,44 @@
 # Assignment1 for DSA4213
 # A0329409A Zhang Jingxuan
-# Word2Vec (Skip-gram) — Full Pipeline with Visualizations & Bonus
+# Word2Vec (Skip-gram)
 
-# -----------------------------
-# [Imports & Global Settings]
-# -----------------------------
-import os, re, json, time, random
+# Imports & Global Settings
+import json
+import os
+import random
+import re
+import time
+
+import matplotlib.pyplot as plt
 import numpy as np
 import umap.umap_ as umap
-import matplotlib.pyplot as plt
-from collections import defaultdict
-from datasets import load_dataset
 from gensim.models import Word2Vec
-from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
-
-# 可选：用于 Bonus 评测（词相似度、类比、20NG）
 from scipy.stats import spearmanr, pearsonr
 from sklearn.cluster import KMeans
 from sklearn.datasets import fetch_20newsgroups
+from sklearn.decomposition import PCA
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+from sklearn.manifold import TSNE
 from sklearn.metrics import accuracy_score, f1_score, adjusted_rand_score, normalized_mutual_info_score
 
-# 复现性
+from datasets import load_dataset
+
+# reproducibility
 SEED = 4213
 random.seed(SEED)
 np.random.seed(SEED)
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
-# -----------------------------
-# [0. Algorithm Explanation — in brief (for report, kept in comments)]
-# -----------------------------
-# Skip-gram with Negative Sampling (SGNS) 目标：
-# 最大化 sum_{(w,c)∈D} [ log σ(v_c^T v_w) + sum_{i=1..k} log σ(-v_{n_i}^T v_w) ]
-# 其中 (w,c) 为中心词-上下文对，n_i 为从噪声分布采样的负样本（幂律 ns_exponent 控制）。
-# SGNS 与 SPPMI 存在理论近似：SGNS 优化等价于将 log 共现比值（PMI）截断（shifted/positive PMI）。
-# 本文件仅实现 SGNS（Skip-gram），但评测/可视化接口通用于后续 GloVe / SPPMI 对比。
 
-# -----------------------------
-# [1. Data Preprocessing]
-# - 语料：WikiText-2
-# - Tokenization：正则 [a-zA-Z]+ ，全部小写
-# - 去停用词：本作业选择去停用词（需确保 GloVe / SPPMI 也一致）
-# - 统计：句子数/Token数/词表等
-# -----------------------------
+# Data Preprocessing]
 STOPWORDS = set("""
 a an the and or of in on to for with without within through at by from into over under
 is are was were be been being am do does did doing have has had having this that these those
 it its as not no nor so such too very can could would should may might must will shall
 we you they he she i me him her them my your our their his hers ours yours theirs et al
+which but unk also after who during other when all th first one two new old three more while
+only most later up about four five between among some out there than before where
 a b c d e f g h i j k l m n o p q r s t u v w x y z
 """.split())
 
@@ -61,7 +50,7 @@ def corpus_stats(tokenized_sentences):
     num_sent = len(tokenized_sentences)
     num_tok = sum(len(s) for s in tokenized_sentences)
     vocab = set(w for s in tokenized_sentences for w in s)
-    print(f"[Corpus] #sentences={num_sent:,}, #tokens={num_tok:,}, |V|={len(vocab):,}")
+    print(f"[Corpus] sentences={num_sent:,}, tokens={num_tok:,}, |V|={len(vocab):,}")
 
 print("[Load] WikiText-2 ...")
 t0 = time.time()
@@ -74,30 +63,27 @@ print(f"[Load] Raw lines: {len(all_lines):,} in {time.time()-t0:.2f}s")
 sentences = [tok for tok in (tokenize_line(l) for l in all_lines) if tok]
 corpus_stats(sentences)
 
-# -----------------------------
-# [2. Model Training — Skip-gram (SGNS)]
-# - 关键超参：vector_size/window/min_count/negative/sample/ns_exponent/epochs
-# - 注意：workers>1 时结果不完全可复现；报告里需注明
-# - 保存模型权重供复现实验
-# -----------------------------
+# Model Training
 w2v_cfg = dict(
-    sentences=sentences,   # iterable of tokenized sentences
-    vector_size=150,       # embedding dim
-    window=8,              # 稍大窗口，弥补去停用词后上下文稀疏
-    min_count=2,           # 忽略频次 < 2 的词
-    sg=1,                  # Skip-gram
-    negative=12,           # 每个正样本的负样本数量
-    sample=1e-4,           # 高频词子采样（已去停用词，可适度调低）
-    workers=6,             # 多线程（非完全可复现）
+    sentences=sentences,
+    vector_size=150,
+    window=6,
+    min_count=2,
+    sg=1,
+    negative=12,
+    sample=1e-4,
+    workers=6,
     epochs=10,
-    hs=0,                  # 0: use negative sampling; 1: hierarchical softmax
-    ns_exponent=0.75,      # 负采样幂律
+    hs=0,
+    ns_exponent=0.75,
     compute_loss=True
 )
 print("[Train] SGNS config:", json.dumps({k:v for k,v in w2v_cfg.items() if k!='sentences'}, indent=2))
 t1 = time.time()
 model = Word2Vec(**w2v_cfg)
-print(f"[Train] Done in {time.time()-t1:.2f}s; final loss (relative): {model.get_latest_training_loss():.2f}")
+loss_per_token = model.get_latest_training_loss() / sum(len(s) for s in sentences)
+print(f"[Train] Done in {time.time()-t1:.2f}s; final loss (relative): {model.get_latest_training_loss():.2f}; Average loss per token: {loss_per_token}")
+
 os.makedirs("artifacts", exist_ok=True)
 model.save("artifacts/w2v_sgns_wikitext2.model")
 model.wv.save_word2vec_format("artifacts/w2v_sgns_wikitext2.txt")
@@ -105,10 +91,7 @@ model.wv.save_word2vec_format("artifacts/w2v_sgns_wikitext2.txt")
 print("[Vocab] Top-10:", list(model.wv.index_to_key)[:10])
 print("[Vocab] Size:", len(model.wv.index_to_key))
 
-# -----------------------------
-# [3. Visualization — PCA / t-SNE / UMAP]
-# 3.1 手工主题簇 + 3.2 种子扩展簇（自动）
-# -----------------------------
+# 3. Visualization — PCA / t-SNE / UMAP
 BUCKETS_MANUAL = {
     "cities": ["london","paris","tokyo","berlin","madrid","rome","beijing","shanghai","singapore"],
     "sciences": ["mathematics","physics","chemistry","biology","statistics","economics","computer"],
@@ -167,14 +150,14 @@ def plot_2d(X2d, words, labels, title="Word Embeddings 2D Plot"):
     plt.tight_layout()
     plt.show()
 
-# --- 3.1 手工主题簇：PCA/t-SNE/UMAP ---
+# Manual Buckets
 wordsM, labelsM, XM = collect_bucket_vectors(model, BUCKETS_MANUAL)
 
 # PCA
 XYp = PCA(n_components=2, random_state=SEED).fit_transform(XM)
 plot_2d(XYp, wordsM, labelsM, "SGNS — PCA (Manual Buckets)")
 
-# t-SNE（较耗时；可调 perplexity/learning_rate/n_iter）
+# t-SNE
 XYt = TSNE(n_components=2, perplexity=30, learning_rate=200, max_iter=1500, random_state=SEED, init="pca").fit_transform(XM)
 plot_2d(XYt, wordsM, labelsM, "SGNS — t-SNE (Manual Buckets)")
 
@@ -184,12 +167,12 @@ reducer = umap.UMAP(
     random_state=SEED,
     n_neighbors=15,
     min_dist=0.1,
-    n_jobs=1   # 显式设定，避免 warning
+    n_jobs=1
 )
 XYu = reducer.fit_transform(XM)
 plot_2d(XYu, wordsM, labelsM, "SGNS — UMAP (Manual Buckets)")
 
-# --- 3.2 种子扩展簇（自动扩展） ---
+# Seed-Expanded Buckets
 # PCA
 auto_buckets = seed_expand_buckets(model, SEED_BUCKETS, per_seed=25)
 wordsA, labelsA, XA = collect_bucket_vectors(model, auto_buckets)
@@ -206,12 +189,7 @@ reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=15, min_dist=
 XYuA = reducer.fit_transform(XA)
 plot_2d(XYuA, wordsA, labelsA, "SGNS — UMAP (Seed-Expanded Buckets)")
 
-# -----------------------------
-# [4. Nearest Neighbors — Multi-class + Frequency-Stratified + Purity Score]
-# - A: 多类别覆盖（来自 BUCKETS_MANUAL 或 auto_buckets）
-# - B: 频率分层 + 质心代表词
-# - C: 邻居纯度指标（同簇比例，半定量）
-# -----------------------------
+# Nearest Neighbors — Multi-class + Frequency-Stratified + Purity Score
 def build_freq_rank(model):
     return {w: i for i, w in enumerate(model.wv.index_to_key)}
 
@@ -262,8 +240,7 @@ def show_neighbors(model, probe_words, topn=10):
             report[w] = model.wv.most_similar(w, topn=topn)
         else:
             report[w] = []
-    # 简洁打印（可在报告贴一部分）
-    for w, nbs in list(report.items())[:20]:  # 只展示前20个代表词防止刷屏
+    for w, nbs in list(report.items())[:20]:
         print(f"\n[{w}]")
         for nb, sim in nbs:
             print(f"  {nb:<20} {sim:.3f}")
@@ -281,7 +258,6 @@ def neighbor_purity(model, probe_words, label_map, topn=10):
     avg = (sum(per_word.values()) / len(per_word)) if per_word else 0.0
     return avg, per_word
 
-# 选代表词（从手工簇出发，评测更“干净”）
 probe_words, label_map = pick_bucket_representatives(
     model, BUCKETS_MANUAL, per_bucket=6, freq_bins=(0.0, 0.2, 0.6, 1.0)
 )
@@ -290,10 +266,7 @@ _ = show_neighbors(model, probe_words, topn=10)
 avg_purity, per_word_purity = neighbor_purity(model, probe_words, label_map, topn=10)
 print(f"[Neighbors] Category-aware purity@10 = {avg_purity:.3f}")
 
-# -----------------------------
-# [5. Bonus-1: Word Similarity (WordSim-353 / SimLex-999)]
-# - 把评测文件放到本地，指定路径即可运行
-# -----------------------------
+# 5. Bonus-1: Word Similarity (WordSim-353 / SimLex-999)
 def eval_word_similarity(model, path, sep=",", has_header=True, w1_col=0, w2_col=1, score_col=2):
     gold, pred = [], []
     import csv
@@ -312,13 +285,14 @@ def eval_word_similarity(model, path, sep=",", has_header=True, w1_col=0, w2_col
     print(f"[WordSim] n={len(gold)} | Spearman={sp:.3f} | Pearson={pe:.3f}")
     return dict(n=len(gold), spearman=float(sp), pearson=float(pe))
 
-# 用法示例（取消注释并改路径后运行）：
-# eval_word_similarity(model, "data/wordsim353.csv", sep=",", has_header=True)
-# eval_word_similarity(model, "data/SimLex-999.txt", sep="\t", has_header=True)
+eval_word_similarity(model,
+    "datasets/wordsim353/combined.csv",
+    sep=",", has_header=True, w1_col=0, w2_col=1, score_col=2)
+eval_word_similarity(model,
+    "datasets/SimLex-999/SimLex-999.txt",
+    sep="\t", has_header=True, w1_col=0, w2_col=1, score_col=3)
 
-# -----------------------------
-# [6. Bonus-2: Analogy (3CosAdd / 3CosMul)]
-# -----------------------------
+# 6. Bonus-2: Analogy (3CosAdd / 3CosMul)
 def analogy_3cosadd(model, a, a_star, b, topn=1, exclude=None):
     try:
         res = model.wv.most_similar(positive=[b, a_star], negative=[a], topn=topn+5)
@@ -363,15 +337,13 @@ def eval_analogies(model, quadruples, method="3cosadd", topn=1):
 quadruples_demo = [
     ("paris","france","tokyo","japan"),
     ("berlin","germany","madrid","spain"),
-    ("king","queen","man","woman"),          # 常见演示对，不完全规范
-    ("walking","walked","running","ran"),    # 形态变化，可能 OOV/难度大
+    ("king","queen","man","woman"),
+    ("walking","walked","running","ran"),
 ]
 eval_analogies(model, quadruples_demo, method="3cosadd", topn=1)
 eval_analogies(model, quadruples_demo, method="3cosmul", topn=1)
 
-# -----------------------------
-# [7. Bonus-3: 20 Newsgroups 文本聚类/分类 (doc embedding = TF-IDF 加权均值)]
-# -----------------------------
+# 7. Bonus-3: 20 Newsgroups 文本聚类/分类 (doc embedding = TF-IDF 加权均值)]
 def simple_tokenize(s):
     return re.findall(r"[a-zA-Z]+", s.lower())
 
@@ -411,7 +383,6 @@ def eval_20ng_small(model):
     Xtr = doc_embed_average(model, train.data, tfidf=tfidf)
     Xte = doc_embed_average(model, test.data,  tfidf=tfidf)
 
-    # 分类
     clf = LogisticRegression(max_iter=2000, n_jobs=-1)
     clf.fit(Xtr, train.target)
     pred = clf.predict(Xte)
@@ -419,7 +390,6 @@ def eval_20ng_small(model):
     f1  = f1_score(test.target, pred, average="macro")
     print(f"[20NG-CLS] Acc={acc:.3f}, Macro-F1={f1:.3f}")
 
-    # 聚类（train+test 一起聚）
     X_all = np.vstack([Xtr, Xte])
     y_all = np.concatenate([train.target, test.target])
     kmeans = KMeans(n_clusters=len(cats), random_state=SEED, n_init=10)
@@ -428,5 +398,5 @@ def eval_20ng_small(model):
     nmi = normalized_mutual_info_score(y_all, y_pred)
     print(f"[20NG-CLU] ARI={ari:.3f}, NMI={nmi:.3f}")
 
-# 运行 20NG（如无网络会跳过）
+# 20NG
 eval_20ng_small(model)
