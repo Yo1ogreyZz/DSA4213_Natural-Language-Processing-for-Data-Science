@@ -12,8 +12,6 @@ import time
 import matplotlib.pyplot as plt
 import numpy as np
 import umap.umap_ as umap
-from gensim.models import Word2Vec
-from scipy.signal import freqs
 from scipy.stats import spearmanr, pearsonr
 from sklearn.cluster import KMeans
 from sklearn.datasets import fetch_20newsgroups
@@ -255,11 +253,11 @@ wordsM, labelsM, XM = collect_bucket_vectors(model, BUCKETS_MANUAL)
 
 # PCA
 XYp = PCA(n_components=2, random_state=SEED).fit_transform(XM)
-plot_2d(XYp, wordsM, labelsM, "SGNS — PCA (Manual Buckets)")
+plot_2d(XYp, wordsM, labelsM, "SPPMI_SVD — PCA (Manual Buckets)")
 
 # t-SNE
 XYt = TSNE(n_components=2, perplexity=20, learning_rate=200, max_iter=2000, random_state=SEED, init="pca").fit_transform(XM)
-plot_2d(XYt, wordsM, labelsM, "SGNS — t-SNE (Manual Buckets)")
+plot_2d(XYt, wordsM, labelsM, "SPPMI_SVD — t-SNE (Manual Buckets)")
 
 # UMAP
 reducer = umap.UMAP(
@@ -270,25 +268,25 @@ reducer = umap.UMAP(
     n_jobs=1
 )
 XYu = reducer.fit_transform(XM)
-plot_2d(XYu, wordsM, labelsM, "SGNS — UMAP (Manual Buckets)")
+plot_2d(XYu, wordsM, labelsM, "SPPMI_SVD — UMAP (Manual Buckets)")
 
 # Seed-Expanded Buckets
 # PCA
 auto_buckets = seed_expand_buckets(model, SEED_BUCKETS, per_seed=25)
 wordsA, labelsA, XA = collect_bucket_vectors(model, auto_buckets)
 XYa = PCA(n_components=2, random_state=SEED).fit_transform(XA)
-plot_2d(XYa, wordsA, labelsA, "SGNS — PCA (Seed-Expanded Buckets)")
+plot_2d(XYa, wordsA, labelsA, "SPPMI_SVD — PCA (Seed-Expanded Buckets)")
 
 # t-SNE
 XYtA = TSNE(n_components=2, perplexity=30, learning_rate=200, max_iter=1500,
             random_state=SEED, init="pca").fit_transform(XA)
-plot_2d(XYtA, wordsA, labelsA, "SGNS — t-SNE (Seed-Expanded Buckets)")
+plot_2d(XYtA, wordsA, labelsA, "SPPMI_SVD — t-SNE (Seed-Expanded Buckets)")
 
 # UMAP
 reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=25, min_dist=0.1, n_jobs=1)
 reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=25, min_dist=0.1, n_jobs=1)
 XYuA = reducer.fit_transform(XA)
-plot_2d(XYuA, wordsA, labelsA, "SGNS — UMAP (Seed-Expanded Buckets)")
+plot_2d(XYuA, wordsA, labelsA, "SPPMI_SVD — UMAP (Seed-Expanded Buckets)")
 
 # Nearest Neighbors — Multi-class + Frequency-Stratified + Purity Score
 def build_freq_rank(model):
