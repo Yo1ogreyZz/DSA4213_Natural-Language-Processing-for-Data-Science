@@ -66,14 +66,14 @@ corpus_stats(sentences)
 # Model Training
 w2v_cfg = dict(
     sentences=sentences,
-    vector_size=150,
-    window=6,
+    vector_size=300,
+    window=10,
     min_count=2,
     sg=1,
-    negative=12,
-    sample=1e-4,
+    negative=15,
+    sample=1e-3,
     workers=6,
-    epochs=10,
+    epochs=15,
     hs=0,
     ns_exponent=0.75,
     compute_loss=True
@@ -93,18 +93,19 @@ print("[Vocab] Size:", len(model.wv.index_to_key))
 
 # 3. Visualization — PCA / t-SNE / UMAP
 BUCKETS_MANUAL = {
-    "cities": ["london","paris","tokyo","berlin","madrid","rome","beijing","shanghai","singapore"],
-    "sciences": ["mathematics","physics","chemistry","biology","statistics","economics","computer"],
-    "titles": ["king","queen","prince","princess","duke","duchess","emperor","empress"],
-    "verbs": ["run","walk","speak","write","study","learn","compute","analyze"],
-    "ml": ["model","data","network","learning","algorithm","probability","regression","classification"]
+    "cities": ["tokyo","berlin","london","beijing","shanghai","athens","frankfurt","lausanne"],
+    "academia": ["mathematics","physics","chemistry","biology","sociology","stanford","thesis","doctoral"],
+    "royalty": ["king","queen","duke","duchess","prince","princess","emperor","empress"],
+    "baseball": ["yankees","twins","rangers","era","saves","all","star","closer"],
+    "vg_music": ["valkyria","chronicles","sega","soundtrack","orchestra","theme","opening","production"]
 }
 
 SEED_BUCKETS = {
-    "cities": ["london","tokyo"],
-    "ml": ["model","algorithm"],
-    "titles": ["king","queen"],
-    "sciences": ["mathematics","physics"]
+    "cities": ["tokyo","berlin","london","beijing"],
+    "academia": ["mathematics","physics","thesis","doctoral"],
+    "royalty": ["king","queen","duke","duchess"],
+    "baseball": ["yankees","twins","rangers","era"],
+    "vg_music": ["valkyria","sega","orchestra","theme"]
 }
 
 def collect_bucket_vectors(model, buckets):
@@ -117,7 +118,7 @@ def collect_bucket_vectors(model, buckets):
     X = np.stack([model.wv[w] for w in words], axis=0)
     return words, labels, X
 
-def seed_expand_buckets(model, seed_dict, per_seed=30, exclude_overlap=True):
+def seed_expand_buckets(model, seed_dict, per_seed=40, exclude_overlap=True):
     buckets = {}
     used = set()
     for name, seeds in seed_dict.items():
@@ -158,7 +159,7 @@ XYp = PCA(n_components=2, random_state=SEED).fit_transform(XM)
 plot_2d(XYp, wordsM, labelsM, "SGNS — PCA (Manual Buckets)")
 
 # t-SNE
-XYt = TSNE(n_components=2, perplexity=30, learning_rate=200, max_iter=1500, random_state=SEED, init="pca").fit_transform(XM)
+XYt = TSNE(n_components=2, perplexity=20, learning_rate=200, max_iter=2000, random_state=SEED, init="pca").fit_transform(XM)
 plot_2d(XYt, wordsM, labelsM, "SGNS — t-SNE (Manual Buckets)")
 
 # UMAP
@@ -185,7 +186,8 @@ XYtA = TSNE(n_components=2, perplexity=30, learning_rate=200, max_iter=1500,
 plot_2d(XYtA, wordsA, labelsA, "SGNS — t-SNE (Seed-Expanded Buckets)")
 
 # UMAP
-reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=15, min_dist=0.1, n_jobs=1)
+reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=25, min_dist=0.1, n_jobs=1)
+reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=25, min_dist=0.1, n_jobs=1)
 XYuA = reducer.fit_transform(XA)
 plot_2d(XYuA, wordsA, labelsA, "SGNS — UMAP (Seed-Expanded Buckets)")
 
@@ -293,7 +295,7 @@ eval_word_similarity(model,
     sep="\t", has_header=True, w1_col=0, w2_col=1, score_col=3)
 
 # 6. Bonus-2: Analogy (3CosAdd / 3CosMul)
-def analogy_3cosadd(model, a, a_star, b, topn=1, exclude=None):
+def analogy_3cosadd(model, a, a_star, b, topn=3, exclude=None):
     try:
         res = model.wv.most_similar(positive=[b, a_star], negative=[a], topn=topn+5)
     except KeyError:
@@ -305,7 +307,7 @@ def analogy_3cosadd(model, a, a_star, b, topn=1, exclude=None):
             if len(out) >= topn: break
     return out
 
-def analogy_3cosmul(model, a, a_star, b, vocab_limit=None, topn=1, exclude=None):
+def analogy_3cosmul(model, a, a_star, b, vocab_limit=None, topn=3, exclude=None):
     try:
         va = model.wv[a]; va_ = model.wv[a_star]; vb = model.wv[b]
     except KeyError:
@@ -335,10 +337,10 @@ def eval_analogies(model, quadruples, method="3cosadd", topn=1):
     print(f"[Analogy] {method} Acc@{topn} = {acc:.3f} (n={total})")
 
 quadruples_demo = [
-    ("paris","france","tokyo","japan"),
-    ("berlin","germany","madrid","spain"),
-    ("king","queen","man","woman"),
-    ("walking","walked","running","ran"),
+    ("king","queen","duke","duchess"),
+    ("tokyo","yokohama","berlin","frankfurt"),
+    ("physics","chemistry","biology","mathematics"),
+    ("closer","saves","starter","innings")
 ]
 eval_analogies(model, quadruples_demo, method="3cosadd", topn=1)
 eval_analogies(model, quadruples_demo, method="3cosmul", topn=1)
