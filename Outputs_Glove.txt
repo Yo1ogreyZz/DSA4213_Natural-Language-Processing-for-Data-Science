@@ -1,5 +1,5 @@
 [Load] WikiText-2 ...
-[Load] Raw lines: 44,836 in 11.76s
+[Load] Raw lines: 44,836 in 14.04s
 [Corpus] sentences=28,369, tokens=1,094,036, |V|=27,091
 [Train] GloVe config: {
   "vector_size": 300,
@@ -8,1819 +8,1285 @@
   "epochs": 15,
   "x_max": 100.0,
   "alpha": 0.75,
-  "lr": 0.05,
+  "lr": 0.025,
   "seed": 4213
 }
 [GloVe] Vocab size after min_count=2: 27,091
-[GloVe] Co-occurrence entries: 10,390,591
-[GloVe][epoch 1] step=100,000/10,390,591  avg_loss≈0.0287
-[GloVe][epoch 1] step=200,000/10,390,591  avg_loss≈0.0280
-[GloVe][epoch 1] step=300,000/10,390,591  avg_loss≈0.0278
-[GloVe][epoch 1] step=400,000/10,390,591  avg_loss≈0.0270
-[GloVe][epoch 1] step=500,000/10,390,591  avg_loss≈0.0275
-[GloVe][epoch 1] step=600,000/10,390,591  avg_loss≈0.0276
-[GloVe][epoch 1] step=700,000/10,390,591  avg_loss≈0.0259
-[GloVe][epoch 1] step=800,000/10,390,591  avg_loss≈0.0253
-[GloVe][epoch 1] step=900,000/10,390,591  avg_loss≈0.0271
-[GloVe][epoch 1] step=1,000,000/10,390,591  avg_loss≈0.0267
-[GloVe][epoch 1] step=1,100,000/10,390,591  avg_loss≈0.0259
-[GloVe][epoch 1] step=1,200,000/10,390,591  avg_loss≈0.0259
-[GloVe][epoch 1] step=1,300,000/10,390,591  avg_loss≈0.0257
-[GloVe][epoch 1] step=1,400,000/10,390,591  avg_loss≈0.0253
-[GloVe][epoch 1] step=1,500,000/10,390,591  avg_loss≈0.0265
-[GloVe][epoch 1] step=1,600,000/10,390,591  avg_loss≈0.0268
-[GloVe][epoch 1] step=1,700,000/10,390,591  avg_loss≈0.0255
-[GloVe][epoch 1] step=1,800,000/10,390,591  avg_loss≈0.0249
-[GloVe][epoch 1] step=1,900,000/10,390,591  avg_loss≈0.0245
-[GloVe][epoch 1] step=2,000,000/10,390,591  avg_loss≈0.0248
-[GloVe][epoch 1] step=2,100,000/10,390,591  avg_loss≈0.0256
-[GloVe][epoch 1] step=2,200,000/10,390,591  avg_loss≈0.0249
-[GloVe][epoch 1] step=2,300,000/10,390,591  avg_loss≈0.0251
-[GloVe][epoch 1] step=2,400,000/10,390,591  avg_loss≈0.0255
-[GloVe][epoch 1] step=2,500,000/10,390,591  avg_loss≈0.0250
-[GloVe][epoch 1] step=2,600,000/10,390,591  avg_loss≈0.0247
-[GloVe][epoch 1] step=2,700,000/10,390,591  avg_loss≈0.0256
-[GloVe][epoch 1] step=2,800,000/10,390,591  avg_loss≈0.0244
-[GloVe][epoch 1] step=2,900,000/10,390,591  avg_loss≈0.0241
-[GloVe][epoch 1] step=3,000,000/10,390,591  avg_loss≈0.0243
-[GloVe][epoch 1] step=3,100,000/10,390,591  avg_loss≈0.0239
-[GloVe][epoch 1] step=3,200,000/10,390,591  avg_loss≈0.0247
-[GloVe][epoch 1] step=3,300,000/10,390,591  avg_loss≈0.0245
-[GloVe][epoch 1] step=3,400,000/10,390,591  avg_loss≈0.0241
-[GloVe][epoch 1] step=3,500,000/10,390,591  avg_loss≈0.0241
-[GloVe][epoch 1] step=3,600,000/10,390,591  avg_loss≈0.0235
-[GloVe][epoch 1] step=3,700,000/10,390,591  avg_loss≈0.0239
-[GloVe][epoch 1] step=3,800,000/10,390,591  avg_loss≈0.0254
-[GloVe][epoch 1] step=3,900,000/10,390,591  avg_loss≈0.0243
-[GloVe][epoch 1] step=4,000,000/10,390,591  avg_loss≈0.0243
-[GloVe][epoch 1] step=4,100,000/10,390,591  avg_loss≈0.0234
-[GloVe][epoch 1] step=4,200,000/10,390,591  avg_loss≈0.0248
-[GloVe][epoch 1] step=4,300,000/10,390,591  avg_loss≈0.0239
-[GloVe][epoch 1] step=4,400,000/10,390,591  avg_loss≈0.0239
-[GloVe][epoch 1] step=4,500,000/10,390,591  avg_loss≈0.0237
-[GloVe][epoch 1] step=4,600,000/10,390,591  avg_loss≈0.0233
-[GloVe][epoch 1] step=4,700,000/10,390,591  avg_loss≈0.0238
-[GloVe][epoch 1] step=4,800,000/10,390,591  avg_loss≈0.0243
-[GloVe][epoch 1] step=4,900,000/10,390,591  avg_loss≈0.0243
-[GloVe][epoch 1] step=5,000,000/10,390,591  avg_loss≈0.0244
-[GloVe][epoch 1] step=5,100,000/10,390,591  avg_loss≈0.0242
-[GloVe][epoch 1] step=5,200,000/10,390,591  avg_loss≈0.0225
-[GloVe][epoch 1] step=5,300,000/10,390,591  avg_loss≈0.0228
-[GloVe][epoch 1] step=5,400,000/10,390,591  avg_loss≈0.0235
-[GloVe][epoch 1] step=5,500,000/10,390,591  avg_loss≈0.0236
-[GloVe][epoch 1] step=5,600,000/10,390,591  avg_loss≈0.0234
-[GloVe][epoch 1] step=5,700,000/10,390,591  avg_loss≈0.0235
-[GloVe][epoch 1] step=5,800,000/10,390,591  avg_loss≈0.0242
-[GloVe][epoch 1] step=5,900,000/10,390,591  avg_loss≈0.0233
-[GloVe][epoch 1] step=6,000,000/10,390,591  avg_loss≈0.0238
-[GloVe][epoch 1] step=6,100,000/10,390,591  avg_loss≈0.0230
-[GloVe][epoch 1] step=6,200,000/10,390,591  avg_loss≈0.0236
-[GloVe][epoch 1] step=6,300,000/10,390,591  avg_loss≈0.0233
-[GloVe][epoch 1] step=6,400,000/10,390,591  avg_loss≈0.0233
-[GloVe][epoch 1] step=6,500,000/10,390,591  avg_loss≈0.0233
-[GloVe][epoch 1] step=6,600,000/10,390,591  avg_loss≈0.0226
-[GloVe][epoch 1] step=6,700,000/10,390,591  avg_loss≈0.0232
-[GloVe][epoch 1] step=6,800,000/10,390,591  avg_loss≈0.0235
-[GloVe][epoch 1] step=6,900,000/10,390,591  avg_loss≈0.0228
-[GloVe][epoch 1] step=7,000,000/10,390,591  avg_loss≈0.0240
-[GloVe][epoch 1] step=7,100,000/10,390,591  avg_loss≈0.0235
-[GloVe][epoch 1] step=7,200,000/10,390,591  avg_loss≈0.0223
-[GloVe][epoch 1] step=7,300,000/10,390,591  avg_loss≈0.0228
-[GloVe][epoch 1] step=7,400,000/10,390,591  avg_loss≈0.0232
-[GloVe][epoch 1] step=7,500,000/10,390,591  avg_loss≈0.0226
-[GloVe][epoch 1] step=7,600,000/10,390,591  avg_loss≈0.0227
-[GloVe][epoch 1] step=7,700,000/10,390,591  avg_loss≈0.0227
-[GloVe][epoch 1] step=7,800,000/10,390,591  avg_loss≈0.0238
-[GloVe][epoch 1] step=7,900,000/10,390,591  avg_loss≈0.0235
-[GloVe][epoch 1] step=8,000,000/10,390,591  avg_loss≈0.0234
-[GloVe][epoch 1] step=8,100,000/10,390,591  avg_loss≈0.0231
-[GloVe][epoch 1] step=8,200,000/10,390,591  avg_loss≈0.0233
-[GloVe][epoch 1] step=8,300,000/10,390,591  avg_loss≈0.0236
-[GloVe][epoch 1] step=8,400,000/10,390,591  avg_loss≈0.0238
-[GloVe][epoch 1] step=8,500,000/10,390,591  avg_loss≈0.0225
-[GloVe][epoch 1] step=8,600,000/10,390,591  avg_loss≈0.0230
-[GloVe][epoch 1] step=8,700,000/10,390,591  avg_loss≈0.0224
-[GloVe][epoch 1] step=8,800,000/10,390,591  avg_loss≈0.0231
-[GloVe][epoch 1] step=8,900,000/10,390,591  avg_loss≈0.0221
-[GloVe][epoch 1] step=9,000,000/10,390,591  avg_loss≈0.0227
-[GloVe][epoch 1] step=9,100,000/10,390,591  avg_loss≈0.0231
-[GloVe][epoch 1] step=9,200,000/10,390,591  avg_loss≈0.0220
-[GloVe][epoch 1] step=9,300,000/10,390,591  avg_loss≈0.0223
-[GloVe][epoch 1] step=9,400,000/10,390,591  avg_loss≈0.0221
-[GloVe][epoch 1] step=9,500,000/10,390,591  avg_loss≈0.0219
-[GloVe][epoch 1] step=9,600,000/10,390,591  avg_loss≈0.0233
-[GloVe][epoch 1] step=9,700,000/10,390,591  avg_loss≈0.0220
-[GloVe][epoch 1] step=9,800,000/10,390,591  avg_loss≈0.0235
-[GloVe][epoch 1] step=9,900,000/10,390,591  avg_loss≈0.0225
-[GloVe][epoch 1] step=10,000,000/10,390,591  avg_loss≈0.0225
-[GloVe][epoch 1] step=10,100,000/10,390,591  avg_loss≈0.0230
-[GloVe][epoch 1] step=10,200,000/10,390,591  avg_loss≈0.0219
-[GloVe][epoch 1] step=10,300,000/10,390,591  avg_loss≈0.0225
-[GloVe] epoch 1/15 done in 157.49s
-[GloVe][epoch 2] step=100,000/10,390,591  avg_loss≈0.0223
-[GloVe][epoch 2] step=200,000/10,390,591  avg_loss≈0.0223
-[GloVe][epoch 2] step=300,000/10,390,591  avg_loss≈0.0243
-[GloVe][epoch 2] step=400,000/10,390,591  avg_loss≈0.0223
-[GloVe][epoch 2] step=500,000/10,390,591  avg_loss≈0.0218
-[GloVe][epoch 2] step=600,000/10,390,591  avg_loss≈0.0225
-[GloVe][epoch 2] step=700,000/10,390,591  avg_loss≈0.0221
-[GloVe][epoch 2] step=800,000/10,390,591  avg_loss≈0.0226
-[GloVe][epoch 2] step=900,000/10,390,591  avg_loss≈0.0216
-[GloVe][epoch 2] step=1,000,000/10,390,591  avg_loss≈0.0219
-[GloVe][epoch 2] step=1,100,000/10,390,591  avg_loss≈0.0231
-[GloVe][epoch 2] step=1,200,000/10,390,591  avg_loss≈0.0229
-[GloVe][epoch 2] step=1,300,000/10,390,591  avg_loss≈0.0219
-[GloVe][epoch 2] step=1,400,000/10,390,591  avg_loss≈0.0217
-[GloVe][epoch 2] step=1,500,000/10,390,591  avg_loss≈0.0217
-[GloVe][epoch 2] step=1,600,000/10,390,591  avg_loss≈0.0213
-[GloVe][epoch 2] step=1,700,000/10,390,591  avg_loss≈0.0220
-[GloVe][epoch 2] step=1,800,000/10,390,591  avg_loss≈0.0222
-[GloVe][epoch 2] step=1,900,000/10,390,591  avg_loss≈0.0221
-[GloVe][epoch 2] step=2,000,000/10,390,591  avg_loss≈0.0223
-[GloVe][epoch 2] step=2,100,000/10,390,591  avg_loss≈0.0220
-[GloVe][epoch 2] step=2,200,000/10,390,591  avg_loss≈0.0216
-[GloVe][epoch 2] step=2,300,000/10,390,591  avg_loss≈0.0209
-[GloVe][epoch 2] step=2,400,000/10,390,591  avg_loss≈0.0220
-[GloVe][epoch 2] step=2,500,000/10,390,591  avg_loss≈0.0221
-[GloVe][epoch 2] step=2,600,000/10,390,591  avg_loss≈0.0216
-[GloVe][epoch 2] step=2,700,000/10,390,591  avg_loss≈0.0208
-[GloVe][epoch 2] step=2,800,000/10,390,591  avg_loss≈0.0222
-[GloVe][epoch 2] step=2,900,000/10,390,591  avg_loss≈0.0216
-[GloVe][epoch 2] step=3,000,000/10,390,591  avg_loss≈0.0226
-[GloVe][epoch 2] step=3,100,000/10,390,591  avg_loss≈0.0221
-[GloVe][epoch 2] step=3,200,000/10,390,591  avg_loss≈0.0219
-[GloVe][epoch 2] step=3,300,000/10,390,591  avg_loss≈0.0214
-[GloVe][epoch 2] step=3,400,000/10,390,591  avg_loss≈0.0220
-[GloVe][epoch 2] step=3,500,000/10,390,591  avg_loss≈0.0212
-[GloVe][epoch 2] step=3,600,000/10,390,591  avg_loss≈0.0210
-[GloVe][epoch 2] step=3,700,000/10,390,591  avg_loss≈0.0212
-[GloVe][epoch 2] step=3,800,000/10,390,591  avg_loss≈0.0215
-[GloVe][epoch 2] step=3,900,000/10,390,591  avg_loss≈0.0217
-[GloVe][epoch 2] step=4,000,000/10,390,591  avg_loss≈0.0211
-[GloVe][epoch 2] step=4,100,000/10,390,591  avg_loss≈0.0217
-[GloVe][epoch 2] step=4,200,000/10,390,591  avg_loss≈0.0209
-[GloVe][epoch 2] step=4,300,000/10,390,591  avg_loss≈0.0225
-[GloVe][epoch 2] step=4,400,000/10,390,591  avg_loss≈0.0212
-[GloVe][epoch 2] step=4,500,000/10,390,591  avg_loss≈0.0211
-[GloVe][epoch 2] step=4,600,000/10,390,591  avg_loss≈0.0208
-[GloVe][epoch 2] step=4,700,000/10,390,591  avg_loss≈0.0216
-[GloVe][epoch 2] step=4,800,000/10,390,591  avg_loss≈0.0211
-[GloVe][epoch 2] step=4,900,000/10,390,591  avg_loss≈0.0204
-[GloVe][epoch 2] step=5,000,000/10,390,591  avg_loss≈0.0213
-[GloVe][epoch 2] step=5,100,000/10,390,591  avg_loss≈0.0209
-[GloVe][epoch 2] step=5,200,000/10,390,591  avg_loss≈0.0209
-[GloVe][epoch 2] step=5,300,000/10,390,591  avg_loss≈0.0207
-[GloVe][epoch 2] step=5,400,000/10,390,591  avg_loss≈0.0207
-[GloVe][epoch 2] step=5,500,000/10,390,591  avg_loss≈0.0212
-[GloVe][epoch 2] step=5,600,000/10,390,591  avg_loss≈0.0211
-[GloVe][epoch 2] step=5,700,000/10,390,591  avg_loss≈0.0215
-[GloVe][epoch 2] step=5,800,000/10,390,591  avg_loss≈0.0211
-[GloVe][epoch 2] step=5,900,000/10,390,591  avg_loss≈0.0213
-[GloVe][epoch 2] step=6,000,000/10,390,591  avg_loss≈0.0207
-[GloVe][epoch 2] step=6,100,000/10,390,591  avg_loss≈0.0208
-[GloVe][epoch 2] step=6,200,000/10,390,591  avg_loss≈0.0202
-[GloVe][epoch 2] step=6,300,000/10,390,591  avg_loss≈0.0207
-[GloVe][epoch 2] step=6,400,000/10,390,591  avg_loss≈0.0207
-[GloVe][epoch 2] step=6,500,000/10,390,591  avg_loss≈0.0209
-[GloVe][epoch 2] step=6,600,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 2] step=6,700,000/10,390,591  avg_loss≈0.0211
-[GloVe][epoch 2] step=6,800,000/10,390,591  avg_loss≈0.0202
-[GloVe][epoch 2] step=6,900,000/10,390,591  avg_loss≈0.0205
-[GloVe][epoch 2] step=7,000,000/10,390,591  avg_loss≈0.0206
-[GloVe][epoch 2] step=7,100,000/10,390,591  avg_loss≈0.0199
-[GloVe][epoch 2] step=7,200,000/10,390,591  avg_loss≈0.0208
-[GloVe][epoch 2] step=7,300,000/10,390,591  avg_loss≈0.0207
-[GloVe][epoch 2] step=7,400,000/10,390,591  avg_loss≈0.0203
-[GloVe][epoch 2] step=7,500,000/10,390,591  avg_loss≈0.0206
-[GloVe][epoch 2] step=7,600,000/10,390,591  avg_loss≈0.0202
-[GloVe][epoch 2] step=7,700,000/10,390,591  avg_loss≈0.0207
-[GloVe][epoch 2] step=7,800,000/10,390,591  avg_loss≈0.0201
-[GloVe][epoch 2] step=7,900,000/10,390,591  avg_loss≈0.0201
-[GloVe][epoch 2] step=8,000,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 2] step=8,100,000/10,390,591  avg_loss≈0.0203
-[GloVe][epoch 2] step=8,200,000/10,390,591  avg_loss≈0.0201
-[GloVe][epoch 2] step=8,300,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 2] step=8,400,000/10,390,591  avg_loss≈0.0201
-[GloVe][epoch 2] step=8,500,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 2] step=8,600,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 2] step=8,700,000/10,390,591  avg_loss≈0.0206
-[GloVe][epoch 2] step=8,800,000/10,390,591  avg_loss≈0.0205
-[GloVe][epoch 2] step=8,900,000/10,390,591  avg_loss≈0.0201
-[GloVe][epoch 2] step=9,000,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 2] step=9,100,000/10,390,591  avg_loss≈0.0205
-[GloVe][epoch 2] step=9,200,000/10,390,591  avg_loss≈0.0199
-[GloVe][epoch 2] step=9,300,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 2] step=9,400,000/10,390,591  avg_loss≈0.0199
-[GloVe][epoch 2] step=9,500,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 2] step=9,600,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 2] step=9,700,000/10,390,591  avg_loss≈0.0198
-[GloVe][epoch 2] step=9,800,000/10,390,591  avg_loss≈0.0203
-[GloVe][epoch 2] step=9,900,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 2] step=10,000,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 2] step=10,100,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 2] step=10,200,000/10,390,591  avg_loss≈0.0198
-[GloVe][epoch 2] step=10,300,000/10,390,591  avg_loss≈0.0200
-[GloVe] epoch 2/15 done in 157.91s
-[GloVe][epoch 3] step=100,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=200,000/10,390,591  avg_loss≈0.0196
-[GloVe][epoch 3] step=300,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=400,000/10,390,591  avg_loss≈0.0204
-[GloVe][epoch 3] step=500,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 3] step=600,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 3] step=700,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=800,000/10,390,591  avg_loss≈0.0198
-[GloVe][epoch 3] step=900,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=1,000,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=1,100,000/10,390,591  avg_loss≈0.0196
-[GloVe][epoch 3] step=1,200,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=1,300,000/10,390,591  avg_loss≈0.0196
-[GloVe][epoch 3] step=1,400,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=1,500,000/10,390,591  avg_loss≈0.0196
-[GloVe][epoch 3] step=1,600,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=1,700,000/10,390,591  avg_loss≈0.0196
-[GloVe][epoch 3] step=1,800,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 3] step=1,900,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 3] step=2,000,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=2,100,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=2,200,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=2,300,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=2,400,000/10,390,591  avg_loss≈0.0200
-[GloVe][epoch 3] step=2,500,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=2,600,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=2,700,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 3] step=2,800,000/10,390,591  avg_loss≈0.0202
-[GloVe][epoch 3] step=2,900,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 3] step=3,000,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=3,100,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=3,200,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 3] step=3,300,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=3,400,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=3,500,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=3,600,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=3,700,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 3] step=3,800,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=3,900,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=4,000,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=4,100,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 3] step=4,200,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=4,300,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 3] step=4,400,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=4,500,000/10,390,591  avg_loss≈0.0188
-[GloVe][epoch 3] step=4,600,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=4,700,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=4,800,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=4,900,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=5,000,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=5,100,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=5,200,000/10,390,591  avg_loss≈0.0188
-[GloVe][epoch 3] step=5,300,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 3] step=5,400,000/10,390,591  avg_loss≈0.0188
-[GloVe][epoch 3] step=5,500,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=5,600,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 3] step=5,700,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=5,800,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=5,900,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 3] step=6,000,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 3] step=6,100,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 3] step=6,200,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 3] step=6,300,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=6,400,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=6,500,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=6,600,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=6,700,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=6,800,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 3] step=6,900,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=7,000,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=7,100,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=7,200,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 3] step=7,300,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 3] step=7,400,000/10,390,591  avg_loss≈0.0198
-[GloVe][epoch 3] step=7,500,000/10,390,591  avg_loss≈0.0199
-[GloVe][epoch 3] step=7,600,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 3] step=7,700,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 3] step=7,800,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 3] step=7,900,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 3] step=8,000,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=8,100,000/10,390,591  avg_loss≈0.0198
-[GloVe][epoch 3] step=8,200,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=8,300,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 3] step=8,400,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=8,500,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 3] step=8,600,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 3] step=8,700,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=8,800,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=8,900,000/10,390,591  avg_loss≈0.0188
-[GloVe][epoch 3] step=9,000,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 3] step=9,100,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 3] step=9,200,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=9,300,000/10,390,591  avg_loss≈0.0194
-[GloVe][epoch 3] step=9,400,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 3] step=9,500,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 3] step=9,600,000/10,390,591  avg_loss≈0.0197
-[GloVe][epoch 3] step=9,700,000/10,390,591  avg_loss≈0.0188
-[GloVe][epoch 3] step=9,800,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 3] step=9,900,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 3] step=10,000,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 3] step=10,100,000/10,390,591  avg_loss≈0.0195
-[GloVe][epoch 3] step=10,200,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 3] step=10,300,000/10,390,591  avg_loss≈0.0187
-[GloVe] epoch 3/15 done in 160.35s
-[GloVe][epoch 4] step=100,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=200,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=300,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 4] step=400,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 4] step=500,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 4] step=600,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 4] step=700,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=800,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 4] step=900,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 4] step=1,000,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 4] step=1,100,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 4] step=1,200,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 4] step=1,300,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=1,400,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 4] step=1,500,000/10,390,591  avg_loss≈0.0192
-[GloVe][epoch 4] step=1,600,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=1,700,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=1,800,000/10,390,591  avg_loss≈0.0188
-[GloVe][epoch 4] step=1,900,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=2,000,000/10,390,591  avg_loss≈0.0191
-[GloVe][epoch 4] step=2,100,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=2,200,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=2,300,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=2,400,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 4] step=2,500,000/10,390,591  avg_loss≈0.0193
-[GloVe][epoch 4] step=2,600,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 4] step=2,700,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=2,800,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 4] step=2,900,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=3,000,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=3,100,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=3,200,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=3,300,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=3,400,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=3,500,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=3,600,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 4] step=3,700,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=3,800,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 4] step=3,900,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=4,000,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=4,100,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=4,200,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 4] step=4,300,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 4] step=4,400,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 4] step=4,500,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 4] step=4,600,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 4] step=4,700,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=4,800,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=4,900,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 4] step=5,000,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=5,100,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=5,200,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=5,300,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=5,400,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 4] step=5,500,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 4] step=5,600,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 4] step=5,700,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=5,800,000/10,390,591  avg_loss≈0.0188
-[GloVe][epoch 4] step=5,900,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 4] step=6,000,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=6,100,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=6,200,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=6,300,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 4] step=6,400,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=6,500,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=6,600,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=6,700,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=6,800,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 4] step=6,900,000/10,390,591  avg_loss≈0.0189
-[GloVe][epoch 4] step=7,000,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=7,100,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=7,200,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 4] step=7,300,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 4] step=7,400,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 4] step=7,500,000/10,390,591  avg_loss≈0.0187
-[GloVe][epoch 4] step=7,600,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=7,700,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=7,800,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=7,900,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 4] step=8,000,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=8,100,000/10,390,591  avg_loss≈0.0190
-[GloVe][epoch 4] step=8,200,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=8,300,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=8,400,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=8,500,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=8,600,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=8,700,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 4] step=8,800,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 4] step=8,900,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 4] step=9,000,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=9,100,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 4] step=9,200,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 4] step=9,300,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 4] step=9,400,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 4] step=9,500,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=9,600,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=9,700,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 4] step=9,800,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=9,900,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 4] step=10,000,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=10,100,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 4] step=10,200,000/10,390,591  avg_loss≈0.0185
-[GloVe][epoch 4] step=10,300,000/10,390,591  avg_loss≈0.0191
-[GloVe] epoch 4/15 done in 161.26s
-[GloVe][epoch 5] step=100,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=200,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 5] step=300,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=400,000/10,390,591  avg_loss≈0.0182
-[GloVe][epoch 5] step=500,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 5] step=600,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=700,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 5] step=800,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 5] step=900,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=1,000,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=1,100,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=1,200,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=1,300,000/10,390,591  avg_loss≈0.0184
-[GloVe][epoch 5] step=1,400,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 5] step=1,500,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 5] step=1,600,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=1,700,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=1,800,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 5] step=1,900,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=2,000,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=2,100,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=2,200,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=2,300,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=2,400,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=2,500,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 5] step=2,600,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=2,700,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 5] step=2,800,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=2,900,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 5] step=3,000,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 5] step=3,100,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=3,200,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=3,300,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=3,400,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=3,500,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=3,600,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=3,700,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 5] step=3,800,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 5] step=3,900,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=4,000,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=4,100,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=4,200,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 5] step=4,300,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=4,400,000/10,390,591  avg_loss≈0.0183
-[GloVe][epoch 5] step=4,500,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=4,600,000/10,390,591  avg_loss≈0.0186
-[GloVe][epoch 5] step=4,700,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=4,800,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=4,900,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 5] step=5,000,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 5] step=5,100,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 5] step=5,200,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=5,300,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 5] step=5,400,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=5,500,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=5,600,000/10,390,591  avg_loss≈0.0180
-[GloVe][epoch 5] step=5,700,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=5,800,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 5] step=5,900,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 5] step=6,000,000/10,390,591  avg_loss≈0.0179
-[GloVe][epoch 5] step=6,100,000/10,390,591  avg_loss≈0.0178
-[GloVe][epoch 5] step=6,200,000/10,390,591  avg_loss≈0.0181
-[GloVe][epoch 5] step=6,300,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=6,400,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=6,500,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=6,600,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=6,700,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=6,800,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=6,900,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 5] step=7,000,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=7,100,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=7,200,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=7,300,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=7,400,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=7,500,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 5] step=7,600,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=7,700,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=7,800,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 5] step=7,900,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 5] step=8,000,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 5] step=8,100,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 5] step=8,200,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=8,300,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=8,400,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=8,500,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=8,600,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=8,700,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 5] step=8,800,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 5] step=8,900,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=9,000,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 5] step=9,100,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 5] step=9,200,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=9,300,000/10,390,591  avg_loss≈0.0177
-[GloVe][epoch 5] step=9,400,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 5] step=9,500,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=9,600,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 5] step=9,700,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=9,800,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 5] step=9,900,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 5] step=10,000,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 5] step=10,100,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 5] step=10,200,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 5] step=10,300,000/10,390,591  avg_loss≈0.0172
-[GloVe] epoch 5/15 done in 159.85s
-[GloVe][epoch 6] step=100,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=200,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=300,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=400,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=500,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 6] step=600,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=700,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 6] step=800,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=900,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=1,000,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=1,100,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 6] step=1,200,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 6] step=1,300,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 6] step=1,400,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=1,500,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 6] step=1,600,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=1,700,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=1,800,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=1,900,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 6] step=2,000,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 6] step=2,100,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=2,200,000/10,390,591  avg_loss≈0.0174
-[GloVe][epoch 6] step=2,300,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=2,400,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=2,500,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=2,600,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=2,700,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 6] step=2,800,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=2,900,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=3,000,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 6] step=3,100,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=3,200,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=3,300,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=3,400,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=3,500,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=3,600,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=3,700,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 6] step=3,800,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=3,900,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=4,000,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=4,100,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=4,200,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=4,300,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=4,400,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 6] step=4,500,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=4,600,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=4,700,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=4,800,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=4,900,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=5,000,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=5,100,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=5,200,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=5,300,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=5,400,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=5,500,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=5,600,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=5,700,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=5,800,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 6] step=5,900,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=6,000,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=6,100,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 6] step=6,200,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=6,300,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=6,400,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=6,500,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=6,600,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=6,700,000/10,390,591  avg_loss≈0.0176
-[GloVe][epoch 6] step=6,800,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=6,900,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=7,000,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 6] step=7,100,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 6] step=7,200,000/10,390,591  avg_loss≈0.0173
-[GloVe][epoch 6] step=7,300,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=7,400,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 6] step=7,500,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=7,600,000/10,390,591  avg_loss≈0.0175
-[GloVe][epoch 6] step=7,700,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=7,800,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 6] step=7,900,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=8,000,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 6] step=8,100,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=8,200,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=8,300,000/10,390,591  avg_loss≈0.0172
-[GloVe][epoch 6] step=8,400,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=8,500,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=8,600,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=8,700,000/10,390,591  avg_loss≈0.0171
-[GloVe][epoch 6] step=8,800,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=8,900,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 6] step=9,000,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=9,100,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=9,200,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 6] step=9,300,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 6] step=9,400,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=9,500,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 6] step=9,600,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=9,700,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=9,800,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 6] step=9,900,000/10,390,591  avg_loss≈0.0170
-[GloVe][epoch 6] step=10,000,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 6] step=10,100,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 6] step=10,200,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 6] step=10,300,000/10,390,591  avg_loss≈0.0170
-[GloVe] epoch 6/15 done in 158.59s
-[GloVe][epoch 7] step=100,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=200,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 7] step=300,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=400,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 7] step=500,000/10,390,591  avg_loss≈0.0167
-[GloVe][epoch 7] step=600,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 7] step=700,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=800,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=900,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=1,000,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=1,100,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=1,200,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=1,300,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=1,400,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=1,500,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=1,600,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=1,700,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=1,800,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=1,900,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=2,000,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=2,100,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=2,200,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=2,300,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=2,400,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=2,500,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=2,600,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=2,700,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=2,800,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 7] step=2,900,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 7] step=3,000,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 7] step=3,100,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=3,200,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=3,300,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=3,400,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=3,500,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=3,600,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=3,700,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=3,800,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 7] step=3,900,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=4,000,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 7] step=4,100,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=4,200,000/10,390,591  avg_loss≈0.0168
-[GloVe][epoch 7] step=4,300,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=4,400,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 7] step=4,500,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=4,600,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=4,700,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=4,800,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=4,900,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=5,000,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=5,100,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=5,200,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=5,300,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=5,400,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=5,500,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=5,600,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=5,700,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=5,800,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=5,900,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 7] step=6,000,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=6,100,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=6,200,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=6,300,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=6,400,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=6,500,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=6,600,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=6,700,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=6,800,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=6,900,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=7,000,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 7] step=7,100,000/10,390,591  avg_loss≈0.0165
-[GloVe][epoch 7] step=7,200,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 7] step=7,300,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 7] step=7,400,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=7,500,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=7,600,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=7,700,000/10,390,591  avg_loss≈0.0169
-[GloVe][epoch 7] step=7,800,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=7,900,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 7] step=8,000,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=8,100,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=8,200,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 7] step=8,300,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 7] step=8,400,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=8,500,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=8,600,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=8,700,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 7] step=8,800,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 7] step=8,900,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=9,000,000/10,390,591  avg_loss≈0.0166
-[GloVe][epoch 7] step=9,100,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=9,200,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=9,300,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 7] step=9,400,000/10,390,591  avg_loss≈0.0163
-[GloVe][epoch 7] step=9,500,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=9,600,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=9,700,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 7] step=9,800,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 7] step=9,900,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 7] step=10,000,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 7] step=10,100,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 7] step=10,200,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 7] step=10,300,000/10,390,591  avg_loss≈0.0164
-[GloVe] epoch 7/15 done in 160.16s
-[GloVe][epoch 8] step=100,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=200,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=300,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=400,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=500,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=600,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=700,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=800,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=900,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=1,000,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=1,100,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=1,200,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=1,300,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=1,400,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=1,500,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=1,600,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=1,700,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=1,800,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=1,900,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=2,000,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 8] step=2,100,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=2,200,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=2,300,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=2,400,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=2,500,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=2,600,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=2,700,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 8] step=2,800,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=2,900,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=3,000,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=3,100,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 8] step=3,200,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=3,300,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=3,400,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=3,500,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=3,600,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=3,700,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=3,800,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=3,900,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=4,000,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 8] step=4,100,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 8] step=4,200,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=4,300,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=4,400,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 8] step=4,500,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=4,600,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=4,700,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=4,800,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=4,900,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=5,000,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=5,100,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=5,200,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=5,300,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=5,400,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=5,500,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=5,600,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=5,700,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=5,800,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=5,900,000/10,390,591  avg_loss≈0.0164
-[GloVe][epoch 8] step=6,000,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=6,100,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=6,200,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 8] step=6,300,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=6,400,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 8] step=6,500,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=6,600,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=6,700,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=6,800,000/10,390,591  avg_loss≈0.0161
-[GloVe][epoch 8] step=6,900,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 8] step=7,000,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=7,100,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 8] step=7,200,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=7,300,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=7,400,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=7,500,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=7,600,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=7,700,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=7,800,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=7,900,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=8,000,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=8,100,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=8,200,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=8,300,000/10,390,591  avg_loss≈0.0162
-[GloVe][epoch 8] step=8,400,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=8,500,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=8,600,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=8,700,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=8,800,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=8,900,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=9,000,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=9,100,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=9,200,000/10,390,591  avg_loss≈0.0158
-[GloVe][epoch 8] step=9,300,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=9,400,000/10,390,591  avg_loss≈0.0159
-[GloVe][epoch 8] step=9,500,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=9,600,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 8] step=9,700,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=9,800,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 8] step=9,900,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 8] step=10,000,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=10,100,000/10,390,591  avg_loss≈0.0160
-[GloVe][epoch 8] step=10,200,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 8] step=10,300,000/10,390,591  avg_loss≈0.0154
-[GloVe] epoch 8/15 done in 160.94s
-[GloVe][epoch 9] step=100,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=200,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=300,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=400,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=500,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=600,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=700,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=800,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=900,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 9] step=1,000,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=1,100,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=1,200,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=1,300,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=1,400,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=1,500,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 9] step=1,600,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=1,700,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=1,800,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=1,900,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 9] step=2,000,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=2,100,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=2,200,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 9] step=2,300,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=2,400,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=2,500,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=2,600,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=2,700,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=2,800,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=2,900,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=3,000,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=3,100,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=3,200,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=3,300,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=3,400,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=3,500,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=3,600,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=3,700,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=3,800,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=3,900,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=4,000,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=4,100,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=4,200,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=4,300,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=4,400,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=4,500,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=4,600,000/10,390,591  avg_loss≈0.0156
-[GloVe][epoch 9] step=4,700,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=4,800,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 9] step=4,900,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=5,000,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=5,100,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=5,200,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=5,300,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=5,400,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 9] step=5,500,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=5,600,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=5,700,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=5,800,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=5,900,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=6,000,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=6,100,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=6,200,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=6,300,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=6,400,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=6,500,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=6,600,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=6,700,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=6,800,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=6,900,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=7,000,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=7,100,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=7,200,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=7,300,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=7,400,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=7,500,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=7,600,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=7,700,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=7,800,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=7,900,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=8,000,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=8,100,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=8,200,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=8,300,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=8,400,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=8,500,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=8,600,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 9] step=8,700,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=8,800,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=8,900,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=9,000,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=9,100,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=9,200,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=9,300,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=9,400,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 9] step=9,500,000/10,390,591  avg_loss≈0.0155
-[GloVe][epoch 9] step=9,600,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=9,700,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=9,800,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=9,900,000/10,390,591  avg_loss≈0.0157
-[GloVe][epoch 9] step=10,000,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 9] step=10,100,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 9] step=10,200,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 9] step=10,300,000/10,390,591  avg_loss≈0.0152
-[GloVe] epoch 9/15 done in 158.22s
-[GloVe][epoch 10] step=100,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=200,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 10] step=300,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=400,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 10] step=500,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=600,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=700,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=800,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 10] step=900,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=1,000,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=1,100,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=1,200,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 10] step=1,300,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=1,400,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=1,500,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=1,600,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=1,700,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=1,800,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=1,900,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=2,000,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=2,100,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=2,200,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=2,300,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=2,400,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=2,500,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=2,600,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=2,700,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=2,800,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=2,900,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=3,000,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=3,100,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=3,200,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=3,300,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=3,400,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 10] step=3,500,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=3,600,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=3,700,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=3,800,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 10] step=3,900,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=4,000,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=4,100,000/10,390,591  avg_loss≈0.0154
-[GloVe][epoch 10] step=4,200,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=4,300,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 10] step=4,400,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=4,500,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=4,600,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=4,700,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=4,800,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=4,900,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=5,000,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=5,100,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=5,200,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=5,300,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=5,400,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=5,500,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 10] step=5,600,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 10] step=5,700,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=5,800,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=5,900,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=6,000,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=6,100,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=6,200,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 10] step=6,300,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=6,400,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=6,500,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=6,600,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=6,700,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=6,800,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 10] step=6,900,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=7,000,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=7,100,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=7,200,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 10] step=7,300,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 10] step=7,400,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=7,500,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=7,600,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=7,700,000/10,390,591  avg_loss≈0.0153
-[GloVe][epoch 10] step=7,800,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=7,900,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 10] step=8,000,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 10] step=8,100,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=8,200,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=8,300,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 10] step=8,400,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=8,500,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=8,600,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=8,700,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=8,800,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=8,900,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 10] step=9,000,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=9,100,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=9,200,000/10,390,591  avg_loss≈0.0152
-[GloVe][epoch 10] step=9,300,000/10,390,591  avg_loss≈0.0150
-[GloVe][epoch 10] step=9,400,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 10] step=9,500,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=9,600,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=9,700,000/10,390,591  avg_loss≈0.0151
-[GloVe][epoch 10] step=9,800,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=9,900,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 10] step=10,000,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=10,100,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 10] step=10,200,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 10] step=10,300,000/10,390,591  avg_loss≈0.0152
-[GloVe] epoch 10/15 done in 156.55s
-[GloVe][epoch 11] step=100,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 11] step=200,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=300,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=400,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=500,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=600,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=700,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=800,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=900,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=1,000,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=1,100,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=1,200,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=1,300,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=1,400,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=1,500,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=1,600,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=1,700,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=1,800,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=1,900,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=2,000,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=2,100,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=2,200,000/10,390,591  avg_loss≈0.0148
-[GloVe][epoch 11] step=2,300,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=2,400,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=2,500,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=2,600,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=2,700,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=2,800,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 11] step=2,900,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=3,000,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=3,100,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=3,200,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=3,300,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 11] step=3,400,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=3,500,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=3,600,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=3,700,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=3,800,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=3,900,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=4,000,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=4,100,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=4,200,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=4,300,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=4,400,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=4,500,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=4,600,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=4,700,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=4,800,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=4,900,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=5,000,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=5,100,000/10,390,591  avg_loss≈0.0149
-[GloVe][epoch 11] step=5,200,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 11] step=5,300,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=5,400,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=5,500,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=5,600,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=5,700,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=5,800,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=5,900,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 11] step=6,000,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=6,100,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=6,200,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=6,300,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=6,400,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=6,500,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=6,600,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 11] step=6,700,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=6,800,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=6,900,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 11] step=7,000,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=7,100,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=7,200,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=7,300,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=7,400,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=7,500,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=7,600,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=7,700,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=7,800,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=7,900,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=8,000,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=8,100,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=8,200,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=8,300,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=8,400,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=8,500,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=8,600,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=8,700,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=8,800,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=8,900,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=9,000,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=9,100,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=9,200,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=9,300,000/10,390,591  avg_loss≈0.0147
-[GloVe][epoch 11] step=9,400,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=9,500,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=9,600,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=9,700,000/10,390,591  avg_loss≈0.0146
-[GloVe][epoch 11] step=9,800,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=9,900,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=10,000,000/10,390,591  avg_loss≈0.0145
-[GloVe][epoch 11] step=10,100,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 11] step=10,200,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 11] step=10,300,000/10,390,591  avg_loss≈0.0146
-[GloVe] epoch 11/15 done in 158.68s
-[GloVe][epoch 12] step=100,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=200,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=300,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=400,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=500,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=600,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=700,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 12] step=800,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=900,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=1,000,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=1,100,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=1,200,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=1,300,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=1,400,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=1,500,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=1,600,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=1,700,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=1,800,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=1,900,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=2,000,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=2,100,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=2,200,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=2,300,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=2,400,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=2,500,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 12] step=2,600,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=2,700,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=2,800,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=2,900,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=3,000,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=3,100,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=3,200,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=3,300,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=3,400,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=3,500,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=3,600,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=3,700,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=3,800,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=3,900,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=4,000,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=4,100,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=4,200,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=4,300,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=4,400,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=4,500,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=4,600,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 12] step=4,700,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=4,800,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=4,900,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=5,000,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=5,100,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=5,200,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=5,300,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=5,400,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 12] step=5,500,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=5,600,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=5,700,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=5,800,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=5,900,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 12] step=6,000,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 12] step=6,100,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=6,200,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=6,300,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=6,400,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=6,500,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=6,600,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=6,700,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=6,800,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=6,900,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=7,000,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=7,100,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=7,200,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=7,300,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=7,400,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=7,500,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=7,600,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=7,700,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=7,800,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=7,900,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=8,000,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=8,100,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=8,200,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=8,300,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=8,400,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=8,500,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=8,600,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=8,700,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=8,800,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=8,900,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=9,000,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=9,100,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=9,200,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=9,300,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=9,400,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 12] step=9,500,000/10,390,591  avg_loss≈0.0143
-[GloVe][epoch 12] step=9,600,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=9,700,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 12] step=9,800,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=9,900,000/10,390,591  avg_loss≈0.0142
-[GloVe][epoch 12] step=10,000,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 12] step=10,100,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 12] step=10,200,000/10,390,591  avg_loss≈0.0144
-[GloVe][epoch 12] step=10,300,000/10,390,591  avg_loss≈0.0143
-[GloVe] epoch 12/15 done in 156.89s
-[GloVe][epoch 13] step=100,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 13] step=200,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=300,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 13] step=400,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=500,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=600,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=700,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 13] step=800,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=900,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 13] step=1,000,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=1,100,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=1,200,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=1,300,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=1,400,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=1,500,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=1,600,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=1,700,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=1,800,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=1,900,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=2,000,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=2,100,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=2,200,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=2,300,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=2,400,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 13] step=2,500,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=2,600,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=2,700,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=2,800,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=2,900,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=3,000,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=3,100,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=3,200,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 13] step=3,300,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=3,400,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 13] step=3,500,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=3,600,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=3,700,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=3,800,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=3,900,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=4,000,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=4,100,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=4,200,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=4,300,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=4,400,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=4,500,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=4,600,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=4,700,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=4,800,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=4,900,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=5,000,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=5,100,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=5,200,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=5,300,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 13] step=5,400,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=5,500,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=5,600,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=5,700,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=5,800,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=5,900,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=6,000,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=6,100,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=6,200,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 13] step=6,300,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=6,400,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=6,500,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=6,600,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=6,700,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=6,800,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=6,900,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=7,000,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=7,100,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 13] step=7,200,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=7,300,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=7,400,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=7,500,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=7,600,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=7,700,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=7,800,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=7,900,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=8,000,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=8,100,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 13] step=8,200,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 13] step=8,300,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=8,400,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 13] step=8,500,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=8,600,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=8,700,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=8,800,000/10,390,591  avg_loss≈0.0141
-[GloVe][epoch 13] step=8,900,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=9,000,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=9,100,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=9,200,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=9,300,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 13] step=9,400,000/10,390,591  avg_loss≈0.0140
-[GloVe][epoch 13] step=9,500,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=9,600,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=9,700,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=9,800,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=9,900,000/10,390,591  avg_loss≈0.0139
-[GloVe][epoch 13] step=10,000,000/10,390,591  avg_loss≈0.0138
-[GloVe][epoch 13] step=10,100,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=10,200,000/10,390,591  avg_loss≈0.0137
-[GloVe][epoch 13] step=10,300,000/10,390,591  avg_loss≈0.0139
-[GloVe] epoch 13/15 done in 158.22s
-[GloVe][epoch 14] step=100,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=200,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=300,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=400,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=500,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=600,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=700,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=800,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=900,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=1,000,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=1,100,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=1,200,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=1,300,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=1,400,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=1,500,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=1,600,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=1,700,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=1,800,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=1,900,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=2,000,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=2,100,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=2,200,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=2,300,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=2,400,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=2,500,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 14] step=2,600,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=2,700,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 14] step=2,800,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=2,900,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=3,000,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=3,100,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=3,200,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=3,300,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=3,400,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=3,500,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=3,600,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=3,700,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=3,800,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=3,900,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=4,000,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=4,100,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=4,200,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=4,300,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=4,400,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=4,500,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=4,600,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=4,700,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=4,800,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=4,900,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=5,000,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=5,100,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=5,200,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=5,300,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=5,400,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=5,500,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=5,600,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=5,700,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=5,800,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=5,900,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=6,000,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=6,100,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=6,200,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=6,300,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=6,400,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=6,500,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=6,600,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=6,700,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=6,800,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=6,900,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=7,000,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=7,100,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=7,200,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=7,300,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=7,400,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=7,500,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=7,600,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=7,700,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=7,800,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=7,900,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=8,000,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=8,100,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=8,200,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=8,300,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=8,400,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=8,500,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=8,600,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=8,700,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=8,800,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=8,900,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=9,000,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=9,100,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=9,200,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=9,300,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=9,400,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 14] step=9,500,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 14] step=9,600,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=9,700,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=9,800,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=9,900,000/10,390,591  avg_loss≈0.0135
-[GloVe][epoch 14] step=10,000,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 14] step=10,100,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=10,200,000/10,390,591  avg_loss≈0.0136
-[GloVe][epoch 14] step=10,300,000/10,390,591  avg_loss≈0.0134
-[GloVe] epoch 14/15 done in 160.43s
-[GloVe][epoch 15] step=100,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=200,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=300,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=400,000/10,390,591  avg_loss≈0.0128
-[GloVe][epoch 15] step=500,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=600,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=700,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=800,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=900,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=1,000,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=1,100,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=1,200,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=1,300,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=1,400,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=1,500,000/10,390,591  avg_loss≈0.0128
-[GloVe][epoch 15] step=1,600,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 15] step=1,700,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=1,800,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=1,900,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 15] step=2,000,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=2,100,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=2,200,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=2,300,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=2,400,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=2,500,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=2,600,000/10,390,591  avg_loss≈0.0128
-[GloVe][epoch 15] step=2,700,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=2,800,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=2,900,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 15] step=3,000,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=3,100,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=3,200,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=3,300,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=3,400,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=3,500,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=3,600,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=3,700,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=3,800,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=3,900,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=4,000,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=4,100,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=4,200,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=4,300,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=4,400,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=4,500,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=4,600,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=4,700,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=4,800,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=4,900,000/10,390,591  avg_loss≈0.0134
-[GloVe][epoch 15] step=5,000,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=5,100,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=5,200,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=5,300,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=5,400,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=5,500,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=5,600,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=5,700,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=5,800,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=5,900,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=6,000,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 15] step=6,100,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=6,200,000/10,390,591  avg_loss≈0.0128
-[GloVe][epoch 15] step=6,300,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=6,400,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=6,500,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=6,600,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=6,700,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=6,800,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=6,900,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=7,000,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 15] step=7,100,000/10,390,591  avg_loss≈0.0129
-[GloVe][epoch 15] step=7,200,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=7,300,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=7,400,000/10,390,591  avg_loss≈0.0128
-[GloVe][epoch 15] step=7,500,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=7,600,000/10,390,591  avg_loss≈0.0128
-[GloVe][epoch 15] step=7,700,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=7,800,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=7,900,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=8,000,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 15] step=8,100,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=8,200,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=8,300,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=8,400,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=8,500,000/10,390,591  avg_loss≈0.0128
-[GloVe][epoch 15] step=8,600,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=8,700,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=8,800,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=8,900,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=9,000,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=9,100,000/10,390,591  avg_loss≈0.0130
-[GloVe][epoch 15] step=9,200,000/10,390,591  avg_loss≈0.0133
-[GloVe][epoch 15] step=9,300,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=9,400,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=9,500,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=9,600,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=9,700,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=9,800,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=9,900,000/10,390,591  avg_loss≈0.0132
-[GloVe][epoch 15] step=10,000,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=10,100,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=10,200,000/10,390,591  avg_loss≈0.0131
-[GloVe][epoch 15] step=10,300,000/10,390,591  avg_loss≈0.0131
-[GloVe] epoch 15/15 done in 159.93s
-[Train] Done in 2397.92s; final loss (relative, last-chunk): 1186.19; Average loss per token: 0.0010842335324984808
+[GloVe] Co-occurrence entries: 6,714,664
+[GloVe][epoch 1] step=100,000/6,714,664  avg_loss≈0.0281
+[GloVe][epoch 1] step=200,000/6,714,664  avg_loss≈0.0277
+[GloVe][epoch 1] step=300,000/6,714,664  avg_loss≈0.0277
+[GloVe][epoch 1] step=400,000/6,714,664  avg_loss≈0.0262
+[GloVe][epoch 1] step=500,000/6,714,664  avg_loss≈0.0264
+[GloVe][epoch 1] step=600,000/6,714,664  avg_loss≈0.0260
+[GloVe][epoch 1] step=700,000/6,714,664  avg_loss≈0.0266
+[GloVe][epoch 1] step=800,000/6,714,664  avg_loss≈0.0275
+[GloVe][epoch 1] step=900,000/6,714,664  avg_loss≈0.0259
+[GloVe][epoch 1] step=1,000,000/6,714,664  avg_loss≈0.0260
+[GloVe][epoch 1] step=1,100,000/6,714,664  avg_loss≈0.0277
+[GloVe][epoch 1] step=1,200,000/6,714,664  avg_loss≈0.0255
+[GloVe][epoch 1] step=1,300,000/6,714,664  avg_loss≈0.0256
+[GloVe][epoch 1] step=1,400,000/6,714,664  avg_loss≈0.0261
+[GloVe][epoch 1] step=1,500,000/6,714,664  avg_loss≈0.0252
+[GloVe][epoch 1] step=1,600,000/6,714,664  avg_loss≈0.0251
+[GloVe][epoch 1] step=1,700,000/6,714,664  avg_loss≈0.0251
+[GloVe][epoch 1] step=1,800,000/6,714,664  avg_loss≈0.0246
+[GloVe][epoch 1] step=1,900,000/6,714,664  avg_loss≈0.0252
+[GloVe][epoch 1] step=2,000,000/6,714,664  avg_loss≈0.0266
+[GloVe][epoch 1] step=2,100,000/6,714,664  avg_loss≈0.0255
+[GloVe][epoch 1] step=2,200,000/6,714,664  avg_loss≈0.0252
+[GloVe][epoch 1] step=2,300,000/6,714,664  avg_loss≈0.0249
+[GloVe][epoch 1] step=2,400,000/6,714,664  avg_loss≈0.0260
+[GloVe][epoch 1] step=2,500,000/6,714,664  avg_loss≈0.0253
+[GloVe][epoch 1] step=2,600,000/6,714,664  avg_loss≈0.0258
+[GloVe][epoch 1] step=2,700,000/6,714,664  avg_loss≈0.0256
+[GloVe][epoch 1] step=2,800,000/6,714,664  avg_loss≈0.0246
+[GloVe][epoch 1] step=2,900,000/6,714,664  avg_loss≈0.0249
+[GloVe][epoch 1] step=3,000,000/6,714,664  avg_loss≈0.0246
+[GloVe][epoch 1] step=3,100,000/6,714,664  avg_loss≈0.0254
+[GloVe][epoch 1] step=3,200,000/6,714,664  avg_loss≈0.0240
+[GloVe][epoch 1] step=3,300,000/6,714,664  avg_loss≈0.0255
+[GloVe][epoch 1] step=3,400,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 1] step=3,500,000/6,714,664  avg_loss≈0.0245
+[GloVe][epoch 1] step=3,600,000/6,714,664  avg_loss≈0.0265
+[GloVe][epoch 1] step=3,700,000/6,714,664  avg_loss≈0.0261
+[GloVe][epoch 1] step=3,800,000/6,714,664  avg_loss≈0.0249
+[GloVe][epoch 1] step=3,900,000/6,714,664  avg_loss≈0.0250
+[GloVe][epoch 1] step=4,000,000/6,714,664  avg_loss≈0.0253
+[GloVe][epoch 1] step=4,100,000/6,714,664  avg_loss≈0.0250
+[GloVe][epoch 1] step=4,200,000/6,714,664  avg_loss≈0.0244
+[GloVe][epoch 1] step=4,300,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 1] step=4,400,000/6,714,664  avg_loss≈0.0250
+[GloVe][epoch 1] step=4,500,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 1] step=4,600,000/6,714,664  avg_loss≈0.0252
+[GloVe][epoch 1] step=4,700,000/6,714,664  avg_loss≈0.0256
+[GloVe][epoch 1] step=4,800,000/6,714,664  avg_loss≈0.0249
+[GloVe][epoch 1] step=4,900,000/6,714,664  avg_loss≈0.0235
+[GloVe][epoch 1] step=5,000,000/6,714,664  avg_loss≈0.0241
+[GloVe][epoch 1] step=5,100,000/6,714,664  avg_loss≈0.0250
+[GloVe][epoch 1] step=5,200,000/6,714,664  avg_loss≈0.0240
+[GloVe][epoch 1] step=5,300,000/6,714,664  avg_loss≈0.0248
+[GloVe][epoch 1] step=5,400,000/6,714,664  avg_loss≈0.0248
+[GloVe][epoch 1] step=5,500,000/6,714,664  avg_loss≈0.0247
+[GloVe][epoch 1] step=5,600,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 1] step=5,700,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 1] step=5,800,000/6,714,664  avg_loss≈0.0256
+[GloVe][epoch 1] step=5,900,000/6,714,664  avg_loss≈0.0246
+[GloVe][epoch 1] step=6,000,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 1] step=6,100,000/6,714,664  avg_loss≈0.0235
+[GloVe][epoch 1] step=6,200,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 1] step=6,300,000/6,714,664  avg_loss≈0.0240
+[GloVe][epoch 1] step=6,400,000/6,714,664  avg_loss≈0.0245
+[GloVe][epoch 1] step=6,500,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 1] step=6,600,000/6,714,664  avg_loss≈0.0240
+[GloVe][epoch 1] step=6,700,000/6,714,664  avg_loss≈0.0242
+[GloVe] epoch 1/15 done in 113.71s
+[GloVe][epoch 2] step=100,000/6,714,664  avg_loss≈0.0244
+[GloVe][epoch 2] step=200,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 2] step=300,000/6,714,664  avg_loss≈0.0244
+[GloVe][epoch 2] step=400,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 2] step=500,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 2] step=600,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 2] step=700,000/6,714,664  avg_loss≈0.0243
+[GloVe][epoch 2] step=800,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 2] step=900,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 2] step=1,000,000/6,714,664  avg_loss≈0.0244
+[GloVe][epoch 2] step=1,100,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 2] step=1,200,000/6,714,664  avg_loss≈0.0241
+[GloVe][epoch 2] step=1,300,000/6,714,664  avg_loss≈0.0244
+[GloVe][epoch 2] step=1,400,000/6,714,664  avg_loss≈0.0241
+[GloVe][epoch 2] step=1,500,000/6,714,664  avg_loss≈0.0249
+[GloVe][epoch 2] step=1,600,000/6,714,664  avg_loss≈0.0241
+[GloVe][epoch 2] step=1,700,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 2] step=1,800,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 2] step=1,900,000/6,714,664  avg_loss≈0.0253
+[GloVe][epoch 2] step=2,000,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 2] step=2,100,000/6,714,664  avg_loss≈0.0244
+[GloVe][epoch 2] step=2,200,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 2] step=2,300,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 2] step=2,400,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 2] step=2,500,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 2] step=2,600,000/6,714,664  avg_loss≈0.0233
+[GloVe][epoch 2] step=2,700,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 2] step=2,800,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 2] step=2,900,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 2] step=3,000,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 2] step=3,100,000/6,714,664  avg_loss≈0.0224
+[GloVe][epoch 2] step=3,200,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 2] step=3,300,000/6,714,664  avg_loss≈0.0242
+[GloVe][epoch 2] step=3,400,000/6,714,664  avg_loss≈0.0241
+[GloVe][epoch 2] step=3,500,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 2] step=3,600,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 2] step=3,700,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 2] step=3,800,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 2] step=3,900,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 2] step=4,000,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 2] step=4,100,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 2] step=4,200,000/6,714,664  avg_loss≈0.0248
+[GloVe][epoch 2] step=4,300,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 2] step=4,400,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 2] step=4,500,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 2] step=4,600,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 2] step=4,700,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 2] step=4,800,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 2] step=4,900,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 2] step=5,000,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 2] step=5,100,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 2] step=5,200,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 2] step=5,300,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 2] step=5,400,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 2] step=5,500,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 2] step=5,600,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 2] step=5,700,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 2] step=5,800,000/6,714,664  avg_loss≈0.0233
+[GloVe][epoch 2] step=5,900,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 2] step=6,000,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 2] step=6,100,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 2] step=6,200,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 2] step=6,300,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 2] step=6,400,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 2] step=6,500,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 2] step=6,600,000/6,714,664  avg_loss≈0.0245
+[GloVe][epoch 2] step=6,700,000/6,714,664  avg_loss≈0.0241
+[GloVe] epoch 2/15 done in 105.16s
+[GloVe][epoch 3] step=100,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 3] step=200,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 3] step=300,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 3] step=400,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 3] step=500,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 3] step=600,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 3] step=700,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 3] step=800,000/6,714,664  avg_loss≈0.0235
+[GloVe][epoch 3] step=900,000/6,714,664  avg_loss≈0.0235
+[GloVe][epoch 3] step=1,000,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 3] step=1,100,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 3] step=1,200,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 3] step=1,300,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 3] step=1,400,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 3] step=1,500,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 3] step=1,600,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 3] step=1,700,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 3] step=1,800,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 3] step=1,900,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 3] step=2,000,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 3] step=2,100,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 3] step=2,200,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 3] step=2,300,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 3] step=2,400,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 3] step=2,500,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 3] step=2,600,000/6,714,664  avg_loss≈0.0235
+[GloVe][epoch 3] step=2,700,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 3] step=2,800,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 3] step=2,900,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 3] step=3,000,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 3] step=3,100,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 3] step=3,200,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 3] step=3,300,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 3] step=3,400,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 3] step=3,500,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 3] step=3,600,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 3] step=3,700,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 3] step=3,800,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 3] step=3,900,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 3] step=4,000,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 3] step=4,100,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 3] step=4,200,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 3] step=4,300,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 3] step=4,400,000/6,714,664  avg_loss≈0.0233
+[GloVe][epoch 3] step=4,500,000/6,714,664  avg_loss≈0.0224
+[GloVe][epoch 3] step=4,600,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 3] step=4,700,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 3] step=4,800,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 3] step=4,900,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 3] step=5,000,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 3] step=5,100,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 3] step=5,200,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 3] step=5,300,000/6,714,664  avg_loss≈0.0238
+[GloVe][epoch 3] step=5,400,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 3] step=5,500,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 3] step=5,600,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 3] step=5,700,000/6,714,664  avg_loss≈0.0235
+[GloVe][epoch 3] step=5,800,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 3] step=5,900,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 3] step=6,000,000/6,714,664  avg_loss≈0.0233
+[GloVe][epoch 3] step=6,100,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 3] step=6,200,000/6,714,664  avg_loss≈0.0236
+[GloVe][epoch 3] step=6,300,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 3] step=6,400,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 3] step=6,500,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 3] step=6,600,000/6,714,664  avg_loss≈0.0235
+[GloVe][epoch 3] step=6,700,000/6,714,664  avg_loss≈0.0225
+[GloVe] epoch 3/15 done in 104.55s
+[GloVe][epoch 4] step=100,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 4] step=200,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 4] step=300,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 4] step=400,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 4] step=500,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 4] step=600,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 4] step=700,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 4] step=800,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 4] step=900,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 4] step=1,000,000/6,714,664  avg_loss≈0.0224
+[GloVe][epoch 4] step=1,100,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 4] step=1,200,000/6,714,664  avg_loss≈0.0234
+[GloVe][epoch 4] step=1,300,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 4] step=1,400,000/6,714,664  avg_loss≈0.0237
+[GloVe][epoch 4] step=1,500,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 4] step=1,600,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 4] step=1,700,000/6,714,664  avg_loss≈0.0224
+[GloVe][epoch 4] step=1,800,000/6,714,664  avg_loss≈0.0226
+[GloVe][epoch 4] step=1,900,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 4] step=2,000,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 4] step=2,100,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 4] step=2,200,000/6,714,664  avg_loss≈0.0232
+[GloVe][epoch 4] step=2,300,000/6,714,664  avg_loss≈0.0239
+[GloVe][epoch 4] step=2,400,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 4] step=2,500,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 4] step=2,600,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 4] step=2,700,000/6,714,664  avg_loss≈0.0227
+[GloVe][epoch 4] step=2,800,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 4] step=2,900,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 4] step=3,000,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 4] step=3,100,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 4] step=3,200,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 4] step=3,300,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 4] step=3,400,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 4] step=3,500,000/6,714,664  avg_loss≈0.0214
+[GloVe][epoch 4] step=3,600,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 4] step=3,700,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 4] step=3,800,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 4] step=3,900,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 4] step=4,000,000/6,714,664  avg_loss≈0.0224
+[GloVe][epoch 4] step=4,100,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 4] step=4,200,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 4] step=4,300,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 4] step=4,400,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 4] step=4,500,000/6,714,664  avg_loss≈0.0229
+[GloVe][epoch 4] step=4,600,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 4] step=4,700,000/6,714,664  avg_loss≈0.0217
+[GloVe][epoch 4] step=4,800,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 4] step=4,900,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 4] step=5,000,000/6,714,664  avg_loss≈0.0228
+[GloVe][epoch 4] step=5,100,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 4] step=5,200,000/6,714,664  avg_loss≈0.0233
+[GloVe][epoch 4] step=5,300,000/6,714,664  avg_loss≈0.0214
+[GloVe][epoch 4] step=5,400,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 4] step=5,500,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 4] step=5,600,000/6,714,664  avg_loss≈0.0225
+[GloVe][epoch 4] step=5,700,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 4] step=5,800,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 4] step=5,900,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 4] step=6,000,000/6,714,664  avg_loss≈0.0240
+[GloVe][epoch 4] step=6,100,000/6,714,664  avg_loss≈0.0231
+[GloVe][epoch 4] step=6,200,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 4] step=6,300,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 4] step=6,400,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 4] step=6,500,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 4] step=6,600,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 4] step=6,700,000/6,714,664  avg_loss≈0.0218
+[GloVe] epoch 4/15 done in 105.73s
+[GloVe][epoch 5] step=100,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=200,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=300,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 5] step=400,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 5] step=500,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 5] step=600,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 5] step=700,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 5] step=800,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=900,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 5] step=1,000,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 5] step=1,100,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 5] step=1,200,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=1,300,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=1,400,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=1,500,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 5] step=1,600,000/6,714,664  avg_loss≈0.0212
+[GloVe][epoch 5] step=1,700,000/6,714,664  avg_loss≈0.0230
+[GloVe][epoch 5] step=1,800,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 5] step=1,900,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 5] step=2,000,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=2,100,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=2,200,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=2,300,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 5] step=2,400,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 5] step=2,500,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 5] step=2,600,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=2,700,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=2,800,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=2,900,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 5] step=3,000,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=3,100,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 5] step=3,200,000/6,714,664  avg_loss≈0.0217
+[GloVe][epoch 5] step=3,300,000/6,714,664  avg_loss≈0.0217
+[GloVe][epoch 5] step=3,400,000/6,714,664  avg_loss≈0.0214
+[GloVe][epoch 5] step=3,500,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=3,600,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=3,700,000/6,714,664  avg_loss≈0.0217
+[GloVe][epoch 5] step=3,800,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 5] step=3,900,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 5] step=4,000,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=4,100,000/6,714,664  avg_loss≈0.0212
+[GloVe][epoch 5] step=4,200,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 5] step=4,300,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=4,400,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 5] step=4,500,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 5] step=4,600,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=4,700,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=4,800,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 5] step=4,900,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=5,000,000/6,714,664  avg_loss≈0.0220
+[GloVe][epoch 5] step=5,100,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 5] step=5,200,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=5,300,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 5] step=5,400,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 5] step=5,500,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=5,600,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=5,700,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 5] step=5,800,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 5] step=5,900,000/6,714,664  avg_loss≈0.0221
+[GloVe][epoch 5] step=6,000,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=6,100,000/6,714,664  avg_loss≈0.0212
+[GloVe][epoch 5] step=6,200,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=6,300,000/6,714,664  avg_loss≈0.0211
+[GloVe][epoch 5] step=6,400,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 5] step=6,500,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 5] step=6,600,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 5] step=6,700,000/6,714,664  avg_loss≈0.0210
+[GloVe] epoch 5/15 done in 106.43s
+[GloVe][epoch 6] step=100,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=200,000/6,714,664  avg_loss≈0.0212
+[GloVe][epoch 6] step=300,000/6,714,664  avg_loss≈0.0218
+[GloVe][epoch 6] step=400,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 6] step=500,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 6] step=600,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 6] step=700,000/6,714,664  avg_loss≈0.0214
+[GloVe][epoch 6] step=800,000/6,714,664  avg_loss≈0.0212
+[GloVe][epoch 6] step=900,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 6] step=1,000,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 6] step=1,100,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 6] step=1,200,000/6,714,664  avg_loss≈0.0223
+[GloVe][epoch 6] step=1,300,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 6] step=1,400,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 6] step=1,500,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=1,600,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 6] step=1,700,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 6] step=1,800,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 6] step=1,900,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 6] step=2,000,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 6] step=2,100,000/6,714,664  avg_loss≈0.0211
+[GloVe][epoch 6] step=2,200,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 6] step=2,300,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 6] step=2,400,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=2,500,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 6] step=2,600,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 6] step=2,700,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=2,800,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 6] step=2,900,000/6,714,664  avg_loss≈0.0211
+[GloVe][epoch 6] step=3,000,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 6] step=3,100,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 6] step=3,200,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 6] step=3,300,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 6] step=3,400,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 6] step=3,500,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 6] step=3,600,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=3,700,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 6] step=3,800,000/6,714,664  avg_loss≈0.0217
+[GloVe][epoch 6] step=3,900,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 6] step=4,000,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 6] step=4,100,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 6] step=4,200,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 6] step=4,300,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=4,400,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 6] step=4,500,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 6] step=4,600,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 6] step=4,700,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 6] step=4,800,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 6] step=4,900,000/6,714,664  avg_loss≈0.0215
+[GloVe][epoch 6] step=5,000,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 6] step=5,100,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 6] step=5,200,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 6] step=5,300,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 6] step=5,400,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 6] step=5,500,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 6] step=5,600,000/6,714,664  avg_loss≈0.0216
+[GloVe][epoch 6] step=5,700,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 6] step=5,800,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=5,900,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=6,000,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 6] step=6,100,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 6] step=6,200,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 6] step=6,300,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 6] step=6,400,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 6] step=6,500,000/6,714,664  avg_loss≈0.0217
+[GloVe][epoch 6] step=6,600,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 6] step=6,700,000/6,714,664  avg_loss≈0.0208
+[GloVe] epoch 6/15 done in 104.29s
+[GloVe][epoch 7] step=100,000/6,714,664  avg_loss≈0.0214
+[GloVe][epoch 7] step=200,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=300,000/6,714,664  avg_loss≈0.0211
+[GloVe][epoch 7] step=400,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 7] step=500,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=600,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 7] step=700,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 7] step=800,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 7] step=900,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=1,000,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 7] step=1,100,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=1,200,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 7] step=1,300,000/6,714,664  avg_loss≈0.0212
+[GloVe][epoch 7] step=1,400,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=1,500,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 7] step=1,600,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=1,700,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 7] step=1,800,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 7] step=1,900,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 7] step=2,000,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 7] step=2,100,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 7] step=2,200,000/6,714,664  avg_loss≈0.0211
+[GloVe][epoch 7] step=2,300,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 7] step=2,400,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 7] step=2,500,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 7] step=2,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 7] step=2,700,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 7] step=2,800,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 7] step=2,900,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 7] step=3,000,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=3,100,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 7] step=3,200,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 7] step=3,300,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 7] step=3,400,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 7] step=3,500,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 7] step=3,600,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 7] step=3,700,000/6,714,664  avg_loss≈0.0213
+[GloVe][epoch 7] step=3,800,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 7] step=3,900,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 7] step=4,000,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=4,100,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 7] step=4,200,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 7] step=4,300,000/6,714,664  avg_loss≈0.0219
+[GloVe][epoch 7] step=4,400,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 7] step=4,500,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 7] step=4,600,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 7] step=4,700,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 7] step=4,800,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 7] step=4,900,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 7] step=5,000,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 7] step=5,100,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 7] step=5,200,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 7] step=5,300,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 7] step=5,400,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 7] step=5,500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 7] step=5,600,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 7] step=5,700,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 7] step=5,800,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 7] step=5,900,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 7] step=6,000,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 7] step=6,100,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 7] step=6,200,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 7] step=6,300,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 7] step=6,400,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 7] step=6,500,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 7] step=6,600,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 7] step=6,700,000/6,714,664  avg_loss≈0.0209
+[GloVe] epoch 7/15 done in 104.10s
+[GloVe][epoch 8] step=100,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=200,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 8] step=300,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 8] step=400,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 8] step=500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 8] step=700,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 8] step=800,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=900,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 8] step=1,000,000/6,714,664  avg_loss≈0.0209
+[GloVe][epoch 8] step=1,100,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 8] step=1,200,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=1,300,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 8] step=1,400,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=1,500,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=1,600,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 8] step=1,700,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 8] step=1,800,000/6,714,664  avg_loss≈0.0211
+[GloVe][epoch 8] step=1,900,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 8] step=2,000,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 8] step=2,100,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 8] step=2,200,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=2,300,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 8] step=2,400,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 8] step=2,500,000/6,714,664  avg_loss≈0.0208
+[GloVe][epoch 8] step=2,600,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 8] step=2,700,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=2,800,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=2,900,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 8] step=3,000,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=3,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 8] step=3,200,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 8] step=3,300,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=3,400,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 8] step=3,500,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 8] step=3,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 8] step=3,700,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 8] step=3,800,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 8] step=3,900,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=4,000,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 8] step=4,100,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 8] step=4,200,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 8] step=4,300,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 8] step=4,400,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 8] step=4,500,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 8] step=4,600,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 8] step=4,700,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 8] step=4,800,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 8] step=4,900,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=5,000,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 8] step=5,100,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 8] step=5,200,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 8] step=5,300,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 8] step=5,400,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 8] step=5,500,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 8] step=5,600,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=5,700,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=5,800,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 8] step=5,900,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 8] step=6,000,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 8] step=6,100,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 8] step=6,200,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 8] step=6,300,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 8] step=6,400,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 8] step=6,500,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 8] step=6,600,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 8] step=6,700,000/6,714,664  avg_loss≈0.0203
+[GloVe] epoch 8/15 done in 107.00s
+[GloVe][epoch 9] step=100,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 9] step=200,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 9] step=300,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 9] step=400,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 9] step=500,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 9] step=600,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=700,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=800,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=900,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 9] step=1,000,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=1,100,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=1,200,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 9] step=1,300,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=1,400,000/6,714,664  avg_loss≈0.0210
+[GloVe][epoch 9] step=1,500,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=1,600,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 9] step=1,700,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 9] step=1,800,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 9] step=1,900,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=2,000,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 9] step=2,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 9] step=2,200,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 9] step=2,300,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 9] step=2,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 9] step=2,500,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 9] step=2,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=2,700,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 9] step=2,800,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 9] step=2,900,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 9] step=3,000,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 9] step=3,100,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 9] step=3,200,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 9] step=3,300,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 9] step=3,400,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 9] step=3,500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 9] step=3,600,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 9] step=3,700,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 9] step=3,800,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 9] step=3,900,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 9] step=4,000,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 9] step=4,100,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=4,200,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 9] step=4,300,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 9] step=4,400,000/6,714,664  avg_loss≈0.0222
+[GloVe][epoch 9] step=4,500,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=4,600,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=4,700,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=4,800,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 9] step=4,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 9] step=5,000,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 9] step=5,100,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=5,200,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 9] step=5,300,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 9] step=5,400,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 9] step=5,500,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=5,600,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 9] step=5,700,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 9] step=5,800,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 9] step=5,900,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 9] step=6,000,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=6,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 9] step=6,200,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 9] step=6,300,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 9] step=6,400,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 9] step=6,500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 9] step=6,600,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 9] step=6,700,000/6,714,664  avg_loss≈0.0193
+[GloVe] epoch 9/15 done in 104.95s
+[GloVe][epoch 10] step=100,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 10] step=200,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=300,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 10] step=400,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 10] step=500,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 10] step=600,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 10] step=700,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 10] step=800,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=900,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 10] step=1,000,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 10] step=1,100,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 10] step=1,200,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=1,300,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=1,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 10] step=1,500,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 10] step=1,600,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 10] step=1,700,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 10] step=1,800,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 10] step=1,900,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 10] step=2,000,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=2,100,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 10] step=2,200,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 10] step=2,300,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 10] step=2,400,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 10] step=2,500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 10] step=2,600,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 10] step=2,700,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 10] step=2,800,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=2,900,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 10] step=3,000,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 10] step=3,100,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 10] step=3,200,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 10] step=3,300,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 10] step=3,400,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 10] step=3,500,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 10] step=3,600,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 10] step=3,700,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 10] step=3,800,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=3,900,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 10] step=4,000,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 10] step=4,100,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 10] step=4,200,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 10] step=4,300,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 10] step=4,400,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 10] step=4,500,000/6,714,664  avg_loss≈0.0206
+[GloVe][epoch 10] step=4,600,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 10] step=4,700,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 10] step=4,800,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 10] step=4,900,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 10] step=5,000,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 10] step=5,100,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 10] step=5,200,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 10] step=5,300,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 10] step=5,400,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 10] step=5,500,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 10] step=5,600,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 10] step=5,700,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 10] step=5,800,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 10] step=5,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 10] step=6,000,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 10] step=6,100,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 10] step=6,200,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 10] step=6,300,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 10] step=6,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 10] step=6,500,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 10] step=6,600,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 10] step=6,700,000/6,714,664  avg_loss≈0.0200
+[GloVe] epoch 10/15 done in 104.80s
+[GloVe][epoch 11] step=100,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 11] step=200,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 11] step=300,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 11] step=400,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 11] step=500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=600,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=700,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 11] step=800,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 11] step=900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=1,000,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 11] step=1,100,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 11] step=1,200,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=1,300,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 11] step=1,400,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=1,500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=1,600,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=1,700,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 11] step=1,800,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 11] step=1,900,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 11] step=2,000,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 11] step=2,100,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=2,200,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 11] step=2,300,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 11] step=2,400,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 11] step=2,500,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=2,600,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 11] step=2,700,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 11] step=2,800,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=2,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=3,000,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=3,100,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 11] step=3,200,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 11] step=3,300,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=3,400,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 11] step=3,500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=3,600,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=3,700,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=3,800,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=3,900,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 11] step=4,000,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 11] step=4,100,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=4,200,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 11] step=4,300,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 11] step=4,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 11] step=4,500,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 11] step=4,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 11] step=4,700,000/6,714,664  avg_loss≈0.0205
+[GloVe][epoch 11] step=4,800,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 11] step=4,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=5,000,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 11] step=5,100,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 11] step=5,200,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=5,300,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 11] step=5,400,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=5,500,000/6,714,664  avg_loss≈0.0189
+[GloVe][epoch 11] step=5,600,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 11] step=5,700,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 11] step=5,800,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=5,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 11] step=6,000,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 11] step=6,100,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=6,200,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 11] step=6,300,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 11] step=6,400,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 11] step=6,500,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 11] step=6,600,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 11] step=6,700,000/6,714,664  avg_loss≈0.0201
+[GloVe] epoch 11/15 done in 105.05s
+[GloVe][epoch 12] step=100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=200,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=300,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 12] step=400,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 12] step=500,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=600,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=700,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 12] step=800,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 12] step=900,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=1,000,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=1,100,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 12] step=1,200,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=1,300,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 12] step=1,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=1,500,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 12] step=1,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 12] step=1,700,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 12] step=1,800,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 12] step=1,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=2,000,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 12] step=2,100,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=2,200,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=2,300,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=2,400,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 12] step=2,500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 12] step=2,600,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 12] step=2,700,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 12] step=2,800,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 12] step=2,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=3,000,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 12] step=3,100,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 12] step=3,200,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=3,300,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=3,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=3,500,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 12] step=3,600,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=3,700,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=3,800,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 12] step=3,900,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 12] step=4,000,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=4,100,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 12] step=4,200,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=4,300,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 12] step=4,400,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=4,500,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 12] step=4,600,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 12] step=4,700,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=4,800,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=4,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=5,000,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 12] step=5,100,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=5,200,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=5,300,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 12] step=5,400,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=5,500,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 12] step=5,600,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 12] step=5,700,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 12] step=5,800,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=5,900,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 12] step=6,000,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 12] step=6,100,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=6,200,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 12] step=6,300,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 12] step=6,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 12] step=6,500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 12] step=6,600,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 12] step=6,700,000/6,714,664  avg_loss≈0.0198
+[GloVe] epoch 12/15 done in 102.29s
+[GloVe][epoch 13] step=100,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 13] step=200,000/6,714,664  avg_loss≈0.0190
+[GloVe][epoch 13] step=300,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 13] step=400,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 13] step=500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 13] step=600,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=700,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 13] step=800,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 13] step=900,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 13] step=1,000,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=1,100,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 13] step=1,200,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=1,300,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 13] step=1,400,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 13] step=1,500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 13] step=1,600,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 13] step=1,700,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 13] step=1,800,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 13] step=1,900,000/6,714,664  avg_loss≈0.0190
+[GloVe][epoch 13] step=2,000,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 13] step=2,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=2,200,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 13] step=2,300,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=2,400,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 13] step=2,500,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 13] step=2,600,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=2,700,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 13] step=2,800,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 13] step=2,900,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 13] step=3,000,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 13] step=3,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=3,200,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 13] step=3,300,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 13] step=3,400,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 13] step=3,500,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 13] step=3,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 13] step=3,700,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 13] step=3,800,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=3,900,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=4,000,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 13] step=4,100,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 13] step=4,200,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=4,300,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=4,400,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 13] step=4,500,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 13] step=4,600,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 13] step=4,700,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=4,800,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 13] step=4,900,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=5,000,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=5,100,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 13] step=5,200,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 13] step=5,300,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=5,400,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 13] step=5,500,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=5,600,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 13] step=5,700,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=5,800,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=5,900,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 13] step=6,000,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 13] step=6,100,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=6,200,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 13] step=6,300,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 13] step=6,400,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=6,500,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 13] step=6,600,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 13] step=6,700,000/6,714,664  avg_loss≈0.0194
+[GloVe] epoch 13/15 done in 100.58s
+[GloVe][epoch 14] step=100,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 14] step=200,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=300,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=400,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 14] step=500,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 14] step=600,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 14] step=700,000/6,714,664  avg_loss≈0.0186
+[GloVe][epoch 14] step=800,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 14] step=900,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 14] step=1,000,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 14] step=1,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=1,200,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 14] step=1,300,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 14] step=1,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 14] step=1,500,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=1,600,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 14] step=1,700,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 14] step=1,800,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 14] step=1,900,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 14] step=2,000,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 14] step=2,100,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 14] step=2,200,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=2,300,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 14] step=2,400,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=2,500,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 14] step=2,600,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 14] step=2,700,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=2,800,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 14] step=2,900,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 14] step=3,000,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 14] step=3,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=3,200,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 14] step=3,300,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=3,400,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 14] step=3,500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 14] step=3,600,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 14] step=3,700,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=3,800,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=3,900,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 14] step=4,000,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=4,100,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=4,200,000/6,714,664  avg_loss≈0.0204
+[GloVe][epoch 14] step=4,300,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 14] step=4,400,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 14] step=4,500,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 14] step=4,600,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 14] step=4,700,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 14] step=4,800,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=4,900,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 14] step=5,000,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 14] step=5,100,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 14] step=5,200,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 14] step=5,300,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 14] step=5,400,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=5,500,000/6,714,664  avg_loss≈0.0189
+[GloVe][epoch 14] step=5,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 14] step=5,700,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 14] step=5,800,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 14] step=5,900,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 14] step=6,000,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 14] step=6,100,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=6,200,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=6,300,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 14] step=6,400,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 14] step=6,500,000/6,714,664  avg_loss≈0.0189
+[GloVe][epoch 14] step=6,600,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 14] step=6,700,000/6,714,664  avg_loss≈0.0196
+[GloVe] epoch 14/15 done in 99.87s
+[GloVe][epoch 15] step=100,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 15] step=200,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 15] step=300,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 15] step=400,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 15] step=500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 15] step=600,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 15] step=700,000/6,714,664  avg_loss≈0.0189
+[GloVe][epoch 15] step=800,000/6,714,664  avg_loss≈0.0189
+[GloVe][epoch 15] step=900,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 15] step=1,000,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 15] step=1,100,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 15] step=1,200,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 15] step=1,300,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 15] step=1,400,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 15] step=1,500,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=1,600,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 15] step=1,700,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 15] step=1,800,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 15] step=1,900,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 15] step=2,000,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 15] step=2,100,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 15] step=2,200,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 15] step=2,300,000/6,714,664  avg_loss≈0.0189
+[GloVe][epoch 15] step=2,400,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 15] step=2,500,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 15] step=2,600,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 15] step=2,700,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=2,800,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 15] step=2,900,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 15] step=3,000,000/6,714,664  avg_loss≈0.0198
+[GloVe][epoch 15] step=3,100,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 15] step=3,200,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 15] step=3,300,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 15] step=3,400,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=3,500,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 15] step=3,600,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 15] step=3,700,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=3,800,000/6,714,664  avg_loss≈0.0192
+[GloVe][epoch 15] step=3,900,000/6,714,664  avg_loss≈0.0190
+[GloVe][epoch 15] step=4,000,000/6,714,664  avg_loss≈0.0189
+[GloVe][epoch 15] step=4,100,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 15] step=4,200,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 15] step=4,300,000/6,714,664  avg_loss≈0.0190
+[GloVe][epoch 15] step=4,400,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 15] step=4,500,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 15] step=4,600,000/6,714,664  avg_loss≈0.0201
+[GloVe][epoch 15] step=4,700,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 15] step=4,800,000/6,714,664  avg_loss≈0.0195
+[GloVe][epoch 15] step=4,900,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 15] step=5,000,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=5,100,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=5,200,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 15] step=5,300,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=5,400,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 15] step=5,500,000/6,714,664  avg_loss≈0.0200
+[GloVe][epoch 15] step=5,600,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 15] step=5,700,000/6,714,664  avg_loss≈0.0203
+[GloVe][epoch 15] step=5,800,000/6,714,664  avg_loss≈0.0197
+[GloVe][epoch 15] step=5,900,000/6,714,664  avg_loss≈0.0207
+[GloVe][epoch 15] step=6,000,000/6,714,664  avg_loss≈0.0193
+[GloVe][epoch 15] step=6,100,000/6,714,664  avg_loss≈0.0196
+[GloVe][epoch 15] step=6,200,000/6,714,664  avg_loss≈0.0199
+[GloVe][epoch 15] step=6,300,000/6,714,664  avg_loss≈0.0188
+[GloVe][epoch 15] step=6,400,000/6,714,664  avg_loss≈0.0191
+[GloVe][epoch 15] step=6,500,000/6,714,664  avg_loss≈0.0194
+[GloVe][epoch 15] step=6,600,000/6,714,664  avg_loss≈0.0202
+[GloVe][epoch 15] step=6,700,000/6,714,664  avg_loss≈0.0194
+[GloVe] epoch 15/15 done in 100.04s
+[Train] Done in 1577.62s; final loss (relative, last-chunk): 286.94; Average loss per token: 0.0002622793947498343
 [Vocab] Top-10: ['time', 'game', 'city', 'song', 'year', 'made', 'season', 'war', 'north', 'used']
 [Vocab] Size: 27091
+[Plot saved to plots/Glove\plot_001.png]
+[Plot saved to plots/Glove\plot_002.png]
+[Plot saved to plots/Glove\plot_003.png]
+[Plot saved to plots/Glove\plot_004.png]
+[Plot saved to plots/Glove\plot_005.png]
+[Plot saved to plots/Glove\plot_006.png]
 [Neighbors] Probes: 30 over 5 buckets.
 
 [tokyo]
-  bandcamp             0.694
-  japan                0.685
-  bermuda              0.666
-  brazil               0.657
-  coincide             0.648
-  sega                 0.630
-  ds                   0.627
-  cardinal             0.623
-  nintendo             0.619
-  indonesia            0.616
+  ben                  0.990
+  motor                0.990
+  wright               0.990
+  del                  0.990
+  kevin                0.990
+  jeff                 0.990
+  succeed              0.990
+  grass                0.990
+  ron                  0.990
+  ford                 0.989
 
 [berlin]
-  judge                0.817
-  websites             0.742
-  papal                0.718
-  hamburg              0.717
-  ruled                0.705
-  supreme              0.694
-  virgin               0.694
-  appealed             0.693
-  pola                 0.674
-  governors            0.672
+  del                  0.990
+  jeff                 0.989
+  pete                 0.989
+  marcus               0.989
+  eric                 0.989
+  ed                   0.989
+  randy                0.989
+  zero                 0.989
+  larry                0.989
+  greg                 0.989
 
 [frankfurt]
-  switzerland          0.788
-  austria              0.764
-  hungary              0.746
-  finland              0.732
-  federico             0.710
-  vijayanagara         0.701
-  conquest             0.690
-  germany              0.669
-  netherlands          0.667
-  nazi                 0.649
-
-[beijing]
-  tales                0.740
-  activision           0.687
-  lucasfilm            0.687
-  paralympics          0.669
-  olympics             0.664
-  visions              0.655
-  harmonix             0.652
-  dj                   0.650
-  popmart              0.642
-  gtx                  0.640
-
-[lausanne]
-  balcony              0.950
-  oar                  0.935
-  catalan              0.933
-  materially           0.931
-  sheltering           0.931
-  yorke                0.929
-  hatfield             0.929
-  es                   0.929
-  smuggle              0.928
-  cessation            0.928
+  greg                 0.975
+  rowland              0.975
+  keith                0.975
+  ed                   0.975
+  eric                 0.975
+  hunter               0.974
+  dean                 0.974
+  wright               0.974
+  del                  0.974
+  gwen                 0.974
 
 [athens]
-  interscope           0.891
-  rusheng              0.879
-  antonin              0.867
-  wichita              0.864
-  skirt                0.864
-  inspected            0.861
-  textbook             0.861
-  enhancement          0.861
-  sire                 0.857
-  puddle               0.856
+  kevin                0.981
+  benjamin             0.981
+  seal                 0.981
+  sam                  0.981
+  pack                 0.980
+  jim                  0.980
+  internal             0.980
+  ben                  0.980
+  julian               0.980
+  lee                  0.980
 
-[chemistry]
-  preparedness         0.883
-  dishonest            0.880
-  therapeutic          0.869
-  stringent            0.863
-  economies            0.859
-  privilege            0.859
-  sustenance           0.857
-  deterrent            0.851
-  babies               0.851
-  thunderbird          0.849
+[lausanne]
+  rays                 0.847
+  faith                0.845
+  borders              0.845
+  tim                  0.844
+  rodriguez            0.844
+  canon                0.844
+  orange               0.844
+  panama               0.844
+  guidance             0.844
+  col                  0.844
+
+[beijing]
+  sur                  0.981
+  troop                0.980
+  corn                 0.980
+  stephen              0.980
+  pace                 0.980
+  flew                 0.980
+  planes               0.980
+  lowered              0.980
+  hamilton             0.980
+  ram                  0.980
 
 [physics]
-  northcentral         0.771
-  outdated             0.709
-  associate            0.708
-  interactive          0.687
-  viral                0.682
-  espn                 0.682
-  madras               0.677
-  hydraulic            0.674
-  rendering            0.673
-  editors              0.665
+  santa                0.985
+  shop                 0.985
+  barbara              0.985
+  mental               0.985
+  matt                 0.985
+  seal                 0.985
+  external             0.985
+  iv                   0.985
+  sam                  0.985
+  max                  0.985
 
-[biology]
-  klm                  0.968
-  gong                 0.963
-  vegetables           0.960
-  narayan              0.960
-  dairy                0.958
-  recycling            0.957
-  convicts             0.956
-  pallium              0.956
-  caprera              0.956
-  lankan               0.956
-
-[stanford]
-  notre                0.941
-  garde                0.931
-  categorization       0.928
-  doo                  0.926
-  nadiadwala           0.924
-  xfx                  0.923
-  fiery                0.922
-  polite               0.922
-  krycek               0.922
-  epics                0.921
-
-[sociology]
-  mu                   0.927
-  autism               0.910
-  textbook             0.883
-  shen                 0.883
-  enroll               0.879
-  quasi                0.874
-  nicky                0.863
-  prewar               0.857
-  carlson              0.847
-  vini                 0.845
+[chemistry]
+  del                  0.991
+  stewart              0.991
+  matt                 0.991
+  greg                 0.991
+  jeff                 0.991
+  mart                 0.991
+  ron                  0.991
+  santa                0.991
+  randy                0.991
+  iv                   0.991
 
 [thesis]
-  buddha               0.822
-  disbanding           0.793
-  frenchman            0.791
-  weyden               0.786
-  thirties             0.785
-  garman               0.783
-  guthrie              0.782
-  hutchinson           0.782
-  ozawa                0.778
-  doherty              0.776
+  del                  0.988
+  ben                  0.988
+  kevin                0.987
+  dr                   0.987
+  iv                   0.987
+  barry                0.987
+  greg                 0.987
+  solely               0.987
+  explain              0.987
+  dean                 0.987
+
+[biology]
+  ian                  0.966
+  sam                  0.966
+  bobby                0.965
+  rick                 0.965
+  stock                0.965
+  mental               0.965
+  burton               0.965
+  santa                0.965
+  shaolin              0.965
+  der                  0.965
+
+[doctoral]
+  ben                  0.959
+  keith                0.958
+  charlotte            0.958
+  del                  0.958
+  larry                0.958
+  drummer              0.958
+  jackie               0.958
+  charlie              0.958
+  kevin                0.958
+  ex                   0.958
+
+[sociology]
+  seal                 0.988
+  jeff                 0.988
+  iv                   0.988
+  eric                 0.987
+  wright               0.987
+  ed                   0.987
+  motor                0.987
+  ron                  0.987
+  pleasure             0.987
+  greg                 0.987
 
 [duke]
-  congressman          0.772
-  knicks               0.691
-  northumberland       0.686
-  lancaster            0.662
-  edward               0.657
-  archbishop           0.652
-  onondaga             0.652
-  pareles              0.641
-  sanneh               0.636
-  edinburgh            0.632
+  commando             0.949
+  montana              0.949
+  leonard              0.948
+  rocky                0.947
+  wellington           0.946
+  detroit              0.946
+  hampshire            0.945
+  robinson             0.945
+  lesser               0.944
+  broadcasting         0.943
 
-[princess]
-  hare                 0.764
-  pan                  0.755
-  rapper               0.727
-  idol                 0.716
-  botanist             0.710
-  americanus           0.700
-  indians              0.700
-  rental               0.686
-  paleontologist       0.685
-  mycologist           0.681
+[prince]
+  au                   0.959
+  warren               0.934
+  canyon               0.933
+  robinson             0.931
+  adjacent             0.931
+  lesser               0.929
+  green                0.929
+  sweep                0.929
+  palm                 0.928
+  detroit              0.928
 
 [duchess]
-  mecca                0.902
-  dunk                 0.889
-  tetragonosaurus      0.886
-  feigenbaum           0.885
-  kingsley             0.876
-  femora               0.874
-  aubrey               0.873
-  egyptologist         0.873
-  vertebrates          0.872
-  melzer               0.872
+  pack                 0.971
+  plus                 0.970
+  max                  0.970
+  karl                 0.970
+  von                  0.970
+  bound                0.970
+  obtain               0.970
+  mrs                  0.969
+  jones                0.969
+  der                  0.969
 
 [empress]
-  caprera              0.948
-  kronprinz            0.941
-  mutinied             0.940
-  unionists            0.940
-  replenish            0.937
-  kurf                 0.936
-  fingal               0.935
-  rst                  0.935
-  grosser              0.934
-  unfortunate          0.934
+  coffee               0.978
+  matt                 0.978
+  franklin             0.977
+  alan                 0.977
+  narrowly             0.977
+  lee                  0.977
+  carriage             0.977
+  raising              0.977
+  sufficient           0.977
+  sam                  0.977
+
+[princess]
+  jim                  0.991
+  del                  0.991
+  kevin                0.991
+  moore                0.991
+  larry                0.991
+  sam                  0.990
+  williams             0.990
+  ben                  0.990
+  motor                0.990
+  ed                   0.990
 
 [queen]
-  charlotte            0.797
-  elizabeth            0.765
-  edward               0.680
-  veera                0.673
-  narasimha            0.670
-  sullivan             0.666
-  frederick            0.658
-  ballala              0.657
-  iv                   0.651
-  henry                0.646
+  ward                 0.981
+  norway               0.981
+  garden               0.980
+  jimmy                0.980
+  lesser               0.979
+  detroit              0.978
+  rocky                0.978
+  pete                 0.978
+  jerry                0.978
+  fighter              0.978
 
-[emperor]
-  gaozong              0.782
-  dynasty              0.780
-  huizong              0.768
-  jin                  0.739
-  roman                0.702
-  empire               0.681
-  constantinople       0.665
-  lennon               0.662
-  patronised           0.655
-  jurchens             0.654
+[yankees]
+  england              0.987
+  defeat               0.987
+  defeated             0.986
+  manager              0.985
+  conference           0.985
+  york                 0.984
+  against              0.984
+  draw                 0.984
+  federer              0.984
+  scotland             0.983
 
-[twins]
-  nathan               0.700
-  typhoon              0.636
-  tanya                0.630
-  cyclone              0.629
-  upgraded             0.616
-  depressions          0.615
-  warning              0.613
-  ellen                0.609
-  delia                0.608
-  storms               0.583
-
-[rangers]
-  dartmouth            0.786
-  everton              0.763
-  chelsea              0.755
-  bruins               0.729
-  yui                  0.726
-  traded               0.723
-  wanderers            0.722
-  anfield              0.721
-  surrey               0.715
-  butler               0.714
-[Neighbors] Category-aware purity@10 = 0.013
-[WordSim] n=318 | Spearman=0.285 | Pearson=0.279
-[WordSim] n=909 | Spearman=0.075 | Pearson=0.072
+[saves]
+  record               0.989
+  era                  0.989
+  consecutive          0.986
+  wins                 0.986
+  jordan               0.985
+  final                0.985
+  fourth               0.985
+  sixth                0.985
+  third                0.985
+  points               0.984
+[Neighbors] Category-aware purity@10 = 0.010
+[WordSim] n=318 | Spearman=0.078 | Pearson=0.080
+[WordSim] n=909 | Spearman=0.063 | Pearson=0.076
 [Analogy] 3cosadd Acc@1 = 0.000 (n=4)
 [Analogy] 3cosmul Acc@1 = 0.000 (n=4)
-[20NG-CLS] Acc=0.743, Macro-F1=0.744
-[20NG-CLU] ARI=0.104, NMI=0.132
+[20NG-CLS] Acc=0.477, Macro-F1=0.468
+[20NG-CLU] ARI=0.034, NMI=0.043

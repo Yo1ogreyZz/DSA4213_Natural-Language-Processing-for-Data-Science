@@ -107,17 +107,15 @@ def build_cooccurrence(sentences, w2i, window=10):
         idxs = [w2i[w] for w in s if w in w2i]
         L = len(idxs)
         for pos, i in enumerate(idxs):
-            start = max(0, pos-window)
-            end   = min(L, pos+window+1)
+            w = random.randint(1, window)
+            start = max(0, pos - w)
+            end   = min(L, pos + w + 1)
             for pos_c in range(start, end):
-                if pos_c == pos:
-                    continue
+                if pos_c == pos: continue
                 j = idxs[pos_c]
                 dist = abs(pos - pos_c)
-                if dist > 0:
-                    cooc[(i,j)] += 1.0 / dist
-    entries = [(i, j, X) for (i,j), X in cooc.items()]
-    return entries
+                cooc[(i,j)] += 1.0 / dist
+    return [(i, j, X) for (i,j), X in cooc.items()]
 
 class GloVeModel:
     def __init__(self, vector_size, vocab_words, seed=4213):
@@ -147,7 +145,7 @@ class GloVeModel:
         self.wv.save(path)
 
 def glove_train(sentences, vector_size=300, window=10, min_count=2,
-                epochs=15, x_max=100.0, alpha=0.75, lr=0.05, seed=4213, report_every=100000):
+                epochs=15, x_max=100.0, alpha=0.75, lr=0.025, seed=4213, report_every=100000):
     words, w2i, freq = build_vocab(sentences, min_count=min_count)
     print(f"[GloVe] Vocab size after min_count={min_count}: {len(words):,}")
     entries = build_cooccurrence(sentences, w2i, window=window)
@@ -160,6 +158,8 @@ def glove_train(sentences, vector_size=300, window=10, min_count=2,
         t_ep = time.time()
         rng.shuffle(entries)
         total_loss = 0.0
+
+        lr_epoch = max(0.0001, lr * (1 - ep / epochs))
 
         for step, (i, j, Xij) in enumerate(entries, 1):
             if Xij < x_max:
@@ -183,13 +183,13 @@ def glove_train(sentences, vector_size=300, window=10, min_count=2,
             model.gW[i] += grad_Wi * grad_Wi
             model.gC[j] += grad_Cj * grad_Cj
 
-            model.W[i]  -= (lr / np.sqrt(model.gW[i])) * grad_Wi
-            model.C[j]  -= (lr / np.sqrt(model.gC[j])) * grad_Cj
+            model.W[i]  -= (lr_epoch / np.sqrt(model.gW[i])) * grad_Wi
+            model.C[j]  -= (lr_epoch / np.sqrt(model.gC[j])) * grad_Cj
 
             model.gbW[i] += grad * grad
             model.gbC[j] += grad * grad
-            model.bW[i]  -= (lr / np.sqrt(model.gbW[i])) * grad
-            model.bC[j]  -= (lr / np.sqrt(model.gbC[j])) * grad
+            model.bW[i]  -= (lr_epoch / np.sqrt(model.gbW[i])) * grad
+            model.bC[j]  -= (lr_epoch / np.sqrt(model.gbC[j])) * grad
 
             if report_every and (step % report_every == 0):
                 avg = total_loss / report_every
@@ -215,7 +215,7 @@ glove_cfg = dict(
     epochs=15,
     x_max=100.0,
     alpha=0.75,
-    lr=0.05,
+    lr=0.025,
     seed=SEED
 )
 
@@ -331,6 +331,7 @@ plot_2d(XYtA, wordsA, labelsA, "GLOVE — t-SNE (Seed-Expanded Buckets)", False)
 reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=25, min_dist=0.1, n_jobs=1)
 XYuA = reducer.fit_transform(XA)
 plot_2d(XYuA, wordsA, labelsA, "GLOVE — UMAP (Seed-Expanded Buckets)", False)
+
 
 # Nearest Neighbors — Multi-class + Frequency-Stratified + Purity Score
 def build_freq_rank(model):
