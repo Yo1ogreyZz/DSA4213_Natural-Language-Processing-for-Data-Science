@@ -345,7 +345,7 @@ quadruples_demo = [
 eval_analogies(model, quadruples_demo, method="3cosadd", topn=1)
 eval_analogies(model, quadruples_demo, method="3cosmul", topn=1)
 
-# 7. Bonus-3: 20 Newsgroups 文本聚类/分类 (doc embedding = TF-IDF 加权均值)]
+# 7. Bonus
 def simple_tokenize(s):
     return re.findall(r"[a-zA-Z]+", s.lower())
 
