@@ -1,0 +1,273 @@
+[Load] WikiText-2 ...
+[Load] Raw lines: 44,836 in 11.07s
+[Corpus] sentences=28,369, tokens=1,094,036, |V|=27,091
+[Train] SGNS config: {
+  "vector_size": 300,
+  "window": 10,
+  "min_count": 2,
+  "sg": 1,
+  "negative": 15,
+  "sample": 0.001,
+  "workers": 6,
+  "epochs": 15,
+  "hs": 0,
+  "ns_exponent": 0.75,
+  "compute_loss": true
+}
+[Train] Done in 114.54s; final loss (relative): 53321704.00; Average loss per token: 48.73852779981646
+[Vocab] Top-10: ['time', 'game', 'city', 'song', 'year', 'made', 'season', 'war', 'north', 'used']
+[Vocab] Size: 27091
+[Plot saved to plots/Word2Vec\plot_001.png]
+[Plot saved to plots/Word2Vec\plot_002.png]
+[Plot saved to plots/Word2Vec\plot_003.png]
+[Plot saved to plots/Word2Vec\plot_004.png]
+[Plot saved to plots/Word2Vec\plot_005.png]
+[Plot saved to plots/Word2Vec\plot_006.png]
+[Neighbors] Probes: 30 over 5 buckets.
+
+[london]
+  islington            0.457
+  heidelberg           0.456
+  piccadilly           0.446
+  esmond               0.444
+  cornhill             0.438
+  cramer               0.437
+  mayson               0.434
+  makropoulos          0.433
+  placards             0.427
+  cheevers             0.424
+
+[tokyo]
+  baku                 0.587
+  yokohama             0.528
+  sportaccord          0.519
+  nippon               0.506
+  nexon                0.501
+  benz                 0.501
+  doha                 0.500
+  budokan              0.498
+  bella                0.490
+  applicant            0.487
+
+[athens]
+  sportaccord          0.672
+  baku                 0.582
+  bella                0.555
+  horizonte            0.548
+  olympian             0.546
+  vaulting             0.542
+  beit                 0.540
+  culminates           0.536
+  chabad               0.530
+  sankat               0.530
+
+[shanghai]
+  tiebreak             0.525
+  benz                 0.524
+  compatriot           0.502
+  wawrinka             0.499
+  taiwanese            0.497
+  sponsoring           0.496
+  mitsuyo              0.494
+  indoors              0.493
+  quarterfinals        0.493
+  marat                0.491
+
+[lausanne]
+  baku                 0.710
+  applicant            0.709
+  ipc                  0.707
+  moutawakel           0.700
+  latvia               0.695
+  yokohama             0.695
+  horizonte            0.687
+  sportaccord          0.686
+  johannesburg         0.668
+  bella                0.666
+
+[frankfurt]
+  henriette            0.581
+  og                   0.571
+  sseldorf             0.550
+  heidelberg           0.537
+  thorst               0.534
+  kleine               0.525
+  chabad               0.523
+  wirth                0.516
+  salons               0.511
+  gast                 0.509
+
+[physics]
+  cowan                0.578
+  physicists           0.553
+  buggy                0.546
+  udell                0.536
+  biology              0.529
+  metallurgy           0.514
+  btec                 0.507
+  farrar               0.501
+  atkin                0.501
+  alamos               0.500
+
+[chemistry]
+  biology              0.541
+  aziridines           0.528
+  corey                0.521
+  chaykovsky           0.510
+  btec                 0.502
+  nascarella           0.498
+  methylene            0.497
+  methanide            0.483
+  votta                0.481
+  reacting             0.478
+
+[stanford]
+  cmu                  0.663
+  kowalski             0.659
+  intrepid             0.630
+  rollefson            0.628
+  papert               0.615
+  hoffmann             0.608
+  mit                  0.601
+  faculties            0.601
+  professions          0.600
+  atomics              0.599
+
+[biology]
+  btec                 0.679
+  silico               0.602
+  carpentry            0.594
+  vocational           0.591
+  vivo                 0.590
+  proteomics           0.579
+  math                 0.575
+  electrophoresis      0.561
+  mediated             0.555
+  hecht                0.555
+
+[sociology]
+  phd                  0.715
+  dissertation         0.672
+  anthropology         0.668
+  doctoral             0.655
+  ethnographic         0.634
+  asylums              0.601
+  math                 0.598
+  erving               0.593
+  ethnography          0.587
+  faculties            0.581
+
+[mathematics]
+  btec                 0.687
+  lilavati             0.650
+  professions          0.612
+  mathematicians       0.601
+  arithmetic           0.597
+  geography            0.597
+  textbooks            0.584
+  curriculum           0.583
+  dvaita               0.580
+  bachelor             0.569
+
+[duke]
+  villiers             0.529
+  devonport            0.503
+  cecilius             0.497
+  tatum                0.483
+  renaming             0.482
+  qufu                 0.482
+  maximilien           0.467
+  guildford            0.456
+  duchess              0.455
+  ascendancy           0.455
+
+[king]
+  overlord             0.513
+  diarmata             0.511
+  ragnaill             0.511
+  ua                   0.508
+  donnchad             0.504
+  kinsman              0.504
+  bagrat               0.502
+  murchad              0.502
+  meic                 0.500
+  sennacherib          0.493
+
+[empress]
+  erard                0.649
+  azzam                0.646
+  genoa                0.644
+  kiev                 0.643
+  joinville            0.640
+  roupen               0.636
+  ayyubid              0.635
+  nobleman             0.631
+  kino                 0.629
+  maud                 0.626
+
+[duchess]
+  guildford            0.678
+  paget                0.665
+  northumberland       0.640
+  lisle                0.613
+  dudley               0.586
+  dudleys              0.580
+  cheevers             0.577
+  countess             0.571
+  mengden              0.567
+  ranulf               0.562
+
+[prince]
+  au                   0.550
+  hailing              0.458
+  jacmel               0.452
+  serge                0.437
+  fronti               0.415
+  citibank             0.408
+  port                 0.393
+  sans                 0.392
+  neserkauhor          0.387
+  spithead             0.385
+
+[emperor]
+  huizong              0.612
+  xizong               0.611
+  qinzong              0.598
+  valerian             0.580
+  abdicated            0.572
+  taizong              0.569
+  caizhou              0.561
+  gallienus            0.559
+  qufu                 0.555
+  overlords            0.552
+
+[saves]
+  batters              0.594
+  shutout              0.583
+  strikeouts           0.569
+  registering          0.565
+  orioles              0.565
+  waivers              0.555
+  nlcs                 0.552
+  tendinitis           0.544
+  nathan               0.541
+  alds                 0.538
+
+[yankees]
+  frazee               0.616
+  braves               0.610
+  wever                0.598
+  sox                  0.594
+  pitching             0.590
+  alds                 0.586
+  mlb                  0.583
+  brewers              0.573
+  orioles              0.573
+  royals               0.571
+[Neighbors] Category-aware purity@10 = 0.017
+[WordSim] n=318 | Spearman=0.524 | Pearson=0.484
+[WordSim] n=909 | Spearman=0.239 | Pearson=0.225
+[Analogy] 3cosadd Acc@1 = 0.000 (n=4)
+[Analogy] 3cosmul Acc@1 = 0.000 (n=4)
+[20NG-CLS] Acc=0.855, Macro-F1=0.854
+[20NG-CLU] ARI=0.456, NMI=0.452

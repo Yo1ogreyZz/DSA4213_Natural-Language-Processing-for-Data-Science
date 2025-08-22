@@ -8,6 +8,7 @@ import os
 import random
 import re
 import time
+import sys
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -30,8 +31,35 @@ random.seed(SEED)
 np.random.seed(SEED)
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
+plt.ioff()
 
-# Data Preprocessing]
+# Redirect print output
+class Tee(object):
+    def __init__(self, *files): self.files = files
+    def write(self, obj):
+        for f in self.files: f.write(obj); f.flush()
+    def flush(self):
+        for f in self.files: f.flush()
+sys.stdout = Tee(sys.stdout, open("Outputs_SGNS.txt", "w", encoding="utf-8"))
+
+# Save all plots
+save_dir = "plots/Word2Vec"
+os.makedirs(save_dir, exist_ok=True)
+
+_plot_count = 0
+def autosave_show(*args, **kwargs):
+    global _plot_count
+    for num in list(plt.get_fignums()):
+        fig = plt.figure(num)
+        _plot_count += 1
+        fname = os.path.join(save_dir, f"plot_{_plot_count:03d}.png")
+        fig.savefig(fname, dpi=300, bbox_inches="tight")
+        print(f"[Plot saved to {fname}]")
+        plt.close(fig)
+
+plt.show = autosave_show
+
+# Data Preprocessing
 STOPWORDS = set("""
 a an the and or of in on to for with without within through at by from into over under
 is are was were be been being am do does did doing have has had having this that these those
@@ -138,14 +166,15 @@ def seed_expand_buckets(model, seed_dict, per_seed=40, exclude_overlap=True):
         buckets[name] = uniq
     return buckets
 
-def plot_2d(X2d, words, labels, title="Word Embeddings 2D Plot"):
+def plot_2d(X2d, words, labels, title="Word Embeddings 2D Plot", show_words=True):
     plt.figure(figsize=(9,7))
     uniq_labels = sorted(set(labels))
     for lab in uniq_labels:
         idx = [i for i,l in enumerate(labels) if l==lab]
         plt.scatter(X2d[idx,0], X2d[idx,1], s=35, label=lab, alpha=0.7)
-        for i in idx:
-            plt.annotate(words[i], (X2d[i,0], X2d[i,1]), fontsize=9, alpha=0.85)
+        if show_words:
+            for i in idx:
+                plt.annotate(words[i], (X2d[i,0], X2d[i,1]), fontsize=9, alpha=0.85)
     plt.title(title)
     plt.legend()
     plt.tight_layout()
@@ -156,11 +185,11 @@ wordsM, labelsM, XM = collect_bucket_vectors(model, BUCKETS_MANUAL)
 
 # PCA
 XYp = PCA(n_components=2, random_state=SEED).fit_transform(XM)
-plot_2d(XYp, wordsM, labelsM, "SGNS — PCA (Manual Buckets)")
+plot_2d(XYp, wordsM, labelsM, "SGNS — PCA (Manual Buckets)", True)
 
 # t-SNE
 XYt = TSNE(n_components=2, perplexity=20, learning_rate=200, max_iter=2000, random_state=SEED, init="pca").fit_transform(XM)
-plot_2d(XYt, wordsM, labelsM, "SGNS — t-SNE (Manual Buckets)")
+plot_2d(XYt, wordsM, labelsM, "SGNS — t-SNE (Manual Buckets)", True)
 
 # UMAP
 reducer = umap.UMAP(
@@ -171,25 +200,24 @@ reducer = umap.UMAP(
     n_jobs=1
 )
 XYu = reducer.fit_transform(XM)
-plot_2d(XYu, wordsM, labelsM, "SGNS — UMAP (Manual Buckets)")
+plot_2d(XYu, wordsM, labelsM, "SGNS — UMAP (Manual Buckets)", True)
 
 # Seed-Expanded Buckets
 # PCA
 auto_buckets = seed_expand_buckets(model, SEED_BUCKETS, per_seed=25)
 wordsA, labelsA, XA = collect_bucket_vectors(model, auto_buckets)
 XYa = PCA(n_components=2, random_state=SEED).fit_transform(XA)
-plot_2d(XYa, wordsA, labelsA, "SGNS — PCA (Seed-Expanded Buckets)")
+plot_2d(XYa, wordsA, labelsA, "SGNS — PCA (Seed-Expanded Buckets)", False)
 
 # t-SNE
 XYtA = TSNE(n_components=2, perplexity=30, learning_rate=200, max_iter=1500,
             random_state=SEED, init="pca").fit_transform(XA)
-plot_2d(XYtA, wordsA, labelsA, "SGNS — t-SNE (Seed-Expanded Buckets)")
+plot_2d(XYtA, wordsA, labelsA, "SGNS — t-SNE (Seed-Expanded Buckets)", False)
 
 # UMAP
 reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=25, min_dist=0.1, n_jobs=1)
-reducer = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=25, min_dist=0.1, n_jobs=1)
 XYuA = reducer.fit_transform(XA)
-plot_2d(XYuA, wordsA, labelsA, "SGNS — UMAP (Seed-Expanded Buckets)")
+plot_2d(XYuA, wordsA, labelsA, "SGNS — UMAP (Seed-Expanded Buckets)", False)
 
 # Nearest Neighbors — Multi-class + Frequency-Stratified + Purity Score
 def build_freq_rank(model):

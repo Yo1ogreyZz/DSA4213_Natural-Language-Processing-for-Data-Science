@@ -1,0 +1,273 @@
+[Load] WikiText-2 ...
+[Load] Raw lines: 44,836 in 10.94s
+[Corpus] sentences=28,369, tokens=1,094,036, |V|=27,091
+[Train] SPPMI-SVD config: {
+  "vector_size": 300,
+  "window": 10,
+  "min_count": 2,
+  "subsample_t": 0.001,
+  "shift_k": 15.0,
+  "svd_power": 0.5,
+  "seed": 4213
+}
+[SPPMI] |V| after min_count=2: 27091
+[SPPMI] Cooc built: nnz=8,201,880 in 6.25s
+[SPPMI] SPPMI built: nnz=8,201,880 in 5.16s
+[SPPMI] SVD done in 40.65s; explained_var=0.130
+[Train] Done in 52.27s (SPPMI-SVD)
+[Vocab] Top-10: ['time', 'game', 'city', 'song', 'year', 'made', 'season', 'war', 'north', 'used']
+[Vocab] Size: 27091
+[Plot saved to plots/SPPMI-SVD\plot_001.png]
+[Plot saved to plots/SPPMI-SVD\plot_002.png]
+[Plot saved to plots/SPPMI-SVD\plot_003.png]
+[Plot saved to plots/SPPMI-SVD\plot_004.png]
+[Plot saved to plots/SPPMI-SVD\plot_005.png]
+[Plot saved to plots/SPPMI-SVD\plot_006.png]
+[Neighbors] Probes: 30 over 5 buckets.
+
+[tokyo]
+  bid                  0.768
+  venues               0.751
+  rio                  0.747
+  athens               0.741
+  bidding              0.733
+  baku                 0.726
+  arena                0.722
+  moscow               0.721
+  ioc                  0.716
+  japan                0.711
+
+[london]
+  house                0.781
+  theatre              0.764
+  travelled            0.761
+  invited              0.754
+  attended             0.753
+  residence            0.745
+  museum               0.739
+  meeting              0.729
+  nottingham           0.729
+  albert               0.729
+
+[athens]
+  tokyo                0.741
+  greece               0.721
+  olympics             0.720
+  paralympics          0.703
+  olympic              0.694
+  cities               0.686
+  sportaccord          0.679
+  beijing              0.678
+  summer               0.671
+  venues               0.671
+
+[beijing]
+  mongols              0.766
+  delegation           0.762
+  chad                 0.720
+  hangzhou             0.718
+  yuan                 0.717
+  xia                  0.707
+  prefectures          0.707
+  burma                0.697
+  liao                 0.694
+  negotiations         0.691
+
+[lausanne]
+  ioc                  0.900
+  applicant            0.895
+  candidature          0.865
+  janeiro              0.864
+  ipc                  0.862
+  rio                  0.858
+  baku                 0.852
+  doha                 0.841
+  sportaccord          0.802
+  nuzman               0.797
+
+[berlin]
+  prussian             0.787
+  opera                0.773
+  meyerbeer            0.770
+  kapellmeister        0.757
+  huguenots            0.743
+  paris                0.740
+  wagner               0.736
+  beer                 0.722
+  operas               0.713
+  germany              0.710
+
+[physics]
+  reines               0.794
+  mathematics          0.756
+  creutz               0.748
+  laboratory           0.740
+  alamos               0.737
+  research             0.725
+  atomics              0.724
+  science              0.722
+  sciences             0.721
+  economics            0.717
+
+[chemistry]
+  appreciated          0.699
+  reaction             0.689
+  felt                 0.675
+  reactions            0.670
+  pairing              0.669
+  screen               0.666
+  catalyst             0.660
+  noting               0.657
+  isn                  0.656
+  biology              0.655
+
+[mathematics]
+  economics            0.810
+  sciences             0.801
+  btec                 0.785
+  geography            0.779
+  bachelor             0.758
+  physics              0.756
+  arithmetic           0.752
+  psychology           0.749
+  science              0.730
+  graduate             0.728
+
+[sociology]
+  anthropology         0.833
+  economics            0.824
+  goffman              0.802
+  sciences             0.798
+  ethnographic         0.774
+  doctoral             0.774
+  phd                  0.765
+  academic             0.758
+  innis                0.750
+  dissertation         0.747
+
+[thesis]
+  doctoral             0.826
+  phd                  0.824
+  innis                0.771
+  economics            0.770
+  zionism              0.750
+  dissertation         0.750
+  essay                0.726
+  sociology            0.723
+  princeton            0.711
+  academic             0.710
+
+[doctoral]
+  dissertation         0.885
+  phd                  0.831
+  thesis               0.826
+  academic             0.786
+  zionism              0.778
+  sociology            0.774
+  princeton            0.754
+  faculties            0.752
+  scholarship          0.748
+  graduate             0.736
+
+[prince]
+  edward               0.741
+  duke                 0.737
+  royal                0.725
+  collapsed            0.703
+  loyal                0.692
+  au                   0.690
+  albert               0.689
+  imperial             0.683
+  queen                0.681
+  remained             0.676
+
+[duke]
+  edward               0.827
+  earl                 0.823
+  dudley               0.820
+  lancaster            0.806
+  northumberland       0.802
+  duchess              0.791
+  henry                0.763
+  guildford            0.758
+  cecil                0.752
+  warwick              0.748
+
+[empress]
+  constantinople       0.717
+  sicily               0.697
+  italy                0.686
+  crowned              0.685
+  arrival              0.673
+  coronation           0.666
+  surrendered          0.666
+  gibraltar            0.665
+  invasion             0.664
+  matilda              0.662
+
+[duchess]
+  dudley               0.880
+  guildford            0.876
+  northumberland       0.859
+  countess             0.817
+  duke                 0.791
+  warwick              0.784
+  lisle                0.780
+  earl                 0.777
+  anne                 0.762
+  paget                0.760
+
+[queen]
+  northumberland       0.711
+  charlotte            0.704
+  lord                 0.686
+  elizabeth            0.685
+  prince               0.681
+  spithead             0.679
+  royal                0.677
+  edward               0.672
+  loyal                0.662
+  albert               0.660
+
+[king]
+  son                  0.784
+  grandfather          0.755
+  kings                0.754
+  grandson             0.740
+  nephew               0.735
+  succeeded            0.733
+  vassal               0.733
+  throne               0.728
+  accession            0.727
+  successor            0.719
+
+[yankees]
+  sox                  0.936
+  dodgers              0.917
+  pitcher              0.912
+  braves               0.909
+  mlb                  0.909
+  phillies             0.906
+  pitching             0.903
+  nathan               0.898
+  nl                   0.898
+  giants               0.897
+
+[saves]
+  strikeouts           0.900
+  mlb                  0.889
+  dodgers              0.889
+  postseason           0.884
+  strikeout            0.882
+  nathan               0.879
+  pitchers             0.878
+  batters              0.875
+  phillies             0.874
+  pitcher              0.873
+[Neighbors] Category-aware purity@10 = 0.077
+[WordSim] n=318 | Spearman=0.376 | Pearson=0.390
+[WordSim] n=909 | Spearman=0.147 | Pearson=0.155
+[Analogy] 3cosadd Acc@1 = 0.000 (n=4)
+[Analogy] 3cosmul Acc@1 = 0.000 (n=4)
+[20NG-CLS] Acc=0.832, Macro-F1=0.832
+[20NG-CLU] ARI=0.176, NMI=0.241
