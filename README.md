@@ -2,6 +2,8 @@
 
 This is an assignment code library, intended for reference, learning and communication. The class period is the Sem1 of the 2025 fall, and the lecturer is Doudou Zhou.
 
+**”Quizzes“** are part of the class assignment and **are included in the grade**. **"Exercise"** refers to class exercises and will **not be included in the final grade.**
+
 ## Assignment1
 
 ### Objective:
