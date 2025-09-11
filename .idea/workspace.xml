@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df5e41d3-adae-40b4-bc6d-8f6ae3170f1d" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2_english_fast_v6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2_english_fast_v6.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <workItem from="1757575206580" duration="809000" />
       <workItem from="1757576180615" duration="1804000" />
       <workItem from="1757583893364" duration="391000" />
-      <workItem from="1757584306022" duration="5878000" />
+      <workItem from="1757584306022" duration="8834000" />
     </task>
     <task id="LOCAL-00001" summary="Update model_eval">
       <option name="closed" value="true" />
