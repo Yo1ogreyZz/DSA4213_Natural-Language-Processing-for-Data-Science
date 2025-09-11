@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d27283f2-18ff-4774-a99d-c8a89d918b8f" name="更改" comment="Finish GLOVE&#10;Update PlotTitle" />
+    <list default="true" id="df5e41d3-adae-40b4-bc6d-8f6ae3170f1d" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,13 +29,15 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.Glove(python).executor&quot;: &quot;Run&quot;,
     &quot;Python.SPPMI-SVD.executor&quot;: &quot;Run&quot;,
     &quot;Python.Word2Vec.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Assignment__1&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Assignment__2&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Coding_Nus/DSA4213/DSA4213_Natural-Language-Processing-for-Data-Science&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -53,13 +57,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="d27283f2-18ff-4774-a99d-c8a89d918b8f" name="更改" comment="" />
+      <changelist id="df5e41d3-adae-40b4-bc6d-8f6ae3170f1d" name="更改" comment="" />
       <created>1755766201833</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755766201833</updated>
       <workItem from="1755766203923" duration="13312000" />
       <workItem from="1755828199500" duration="918000" />
+      <workItem from="1757483843710" duration="20000" />
+      <workItem from="1757483880040" duration="1292000" />
+      <workItem from="1757485199808" duration="1432000" />
+      <workItem from="1757486661472" duration="195000" />
+      <workItem from="1757486870544" duration="6672000" />
     </task>
     <task id="LOCAL-00001" summary="Update model_eval">
       <option name="closed" value="true" />
