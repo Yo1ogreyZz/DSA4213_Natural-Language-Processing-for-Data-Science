@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df5e41d3-adae-40b4-bc6d-8f6ae3170f1d" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2_english_fast_v6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2_english_fast_v6.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/loss_exp1_lstm_char_L256_d0.0.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/loss_exp1_lstm_char_L256_d0.0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/loss_exp2_lstm_char_L256_d0.2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/loss_exp2_lstm_char_L256_d0.2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/loss_exp3_transformer_char_L128_d0.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/loss_exp3_transformer_char_L128_d0.1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/loss_exp4_transformer_char_L256_d0.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/loss_exp4_transformer_char_L256_d0.1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/loss_exp5_transformer_word_L128_d0.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/loss_exp5_transformer_word_L128_d0.1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/loss_exp6_lstm_word_L256_d0.2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/loss_exp6_lstm_word_L256_d0.2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.csv" afterDir="false" />
-    </list>
+    <list default="true" id="df5e41d3-adae-40b4-bc6d-8f6ae3170f1d" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,8 +48,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.515" />
-        <option value="bundled-python-sdk-7e47963ff851-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.515" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
       </set>
     </attachedChunks>
   </component>
@@ -85,6 +75,7 @@
       <workItem from="1757583893364" duration="391000" />
       <workItem from="1757584306022" duration="9074000" />
       <workItem from="1757601130994" duration="799000" />
+      <workItem from="1760021354045" duration="210000" />
     </task>
     <task id="LOCAL-00001" summary="Update model_eval">
       <option name="closed" value="true" />
