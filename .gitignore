@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/*.iws
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Large Model Files (MOST IMPORTANT - these are huge!)
+*.safetensors
+*.bin
+*.pth
+*.pt
+*.h5
+*.ckpt
+
+# Hugging Face Cache
+cache/
+.cache/
+
+# Large Dataset Files
+data/*.csv
+data/*.json
+data/*.txt
+data/*.tsv
+
+# Large result files
+*.pkl
+*.pickle
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
